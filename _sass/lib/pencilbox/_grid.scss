@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* 
+* PENCILBOX 
+* Author:
+* Sri Kadimisetty <sri.io>
+* Version 0.5 
+* Oct 2015
+* 
+* Notes:
+* 1. Element in a `whole` class occupies the entire width.
+* 2. Element in a `half` class occupies half the width.
+* 3. A `half` has to be placed inside a `whole`.
+* 4. A `whole` can contain two `half`s.
+* 5. A `padded-half` provides some padding towards the center.
+* 6. Use two `padded-half`s to have a gutter in the center.
+* 7. There is no parent "grid container".
+*
+* TODO: 
+* 1. Extract Percentages as a Math Calculation.
+*/
+
+// VARIABLE SETTINGS
+$pb-grid-force-center: true !default;
+// - Desktop
+$pb-grid-max-width: 640px !default;
+$pb-grid-gutter-width: 40px !default;
+// - Mobile
+$pb-grid-mobile-max-width: 320px !default;
+
+
+// HELPER MIXINS
+// - Clearfix
+@mixin clearfix {
+    &:before, &:after {
+        display: table;
+        clear: both; 
+        content:""; } }
+
+// - Mobile Breakpoint Helper
+@mixin mobile {
+    @media (max-width: #{$pb-grid-max-width - 1px}) {
+        @content; } }
+
+
+// GRID
+.pb-whole {
+    box-sizing: border-box;
+    @if $pb-grid-force-center == true { margin: 0 auto } 
+    max-width: $pb-grid-max-width;
+    min-height: 1px;
+
+    @include clearfix; 
+    @include mobile {
+        width: $pb-grid-mobile-max-width; }
+
+    .pb-half {
+        float: left;
+        padding: 0;
+        min-height: 1px;
+        width: 50%; 
+
+        @include mobile {
+            width: 100%; } }
+
+    .pb-padded-half {
+        float: left;
+        padding-right: 3.125%;
+        padding-left: 0%;
+        min-height: 1px;
+        width: 46.875%;
+
+        @include mobile {
+            padding: 0;
+            width: 100%; }
+
+        &:nth-of-type(even) {
+            padding-right: 0%; 
+            padding-left: 3.125%; 
+
+            @include mobile {
+                padding: 0;
+                width: 100%; } } } }
+
+// DESKTOP OR MOBILE ONLY
+.pb-desktop-only {
+    @include mobile {
+        display: none; } }
+
+.pb-mobile-only {
+    display: none;
+
+    @include mobile {
+        display: block; } }
