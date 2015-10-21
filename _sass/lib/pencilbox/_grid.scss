@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-// HELPER MIXINS
-// - Clearfix
-@mixin clearfix {
-    &:before, &:after {
-        display: table;
-        clear: both; 
-        content:""; } }
-
-// - Mobile Breakpoint Helper
-@mixin mobile {
-    @media (max-width: #{$pb-grid-max-width - 1px}) {
-        @content; } }
 
 
 // GRID
