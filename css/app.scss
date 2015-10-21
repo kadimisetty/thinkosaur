@@ -3,20 +3,22 @@
 @charset "UTF-8";
 
 
-/* DEPENDENCIES */
+// DEPENDENCIES
 // - CSS Reset by Eric Meyer
-@import "lib/cssreset/_cssreset.scss";
-
-// - Animate.scss
+@import "lib/cssreset/cssreset";
 
 // - Pencilbox-grid
-@import "lib/pencilbox/_grid.scss";
+@import "lib/pencilbox/pencilbox";
 
 
-/* STYLES */
+// STYLES
 // - Settings
-// @import "settings/fonts";
-// @import "settings/colors";
+@import "settings/colors";
 
 // - Application
-@import "app/programmer-callout.scss";
+@import "app/body";
+@import "app/programmer-callout";
+@import "app/shows-listing";
+@import "app/dino-divider";
+@import "app/features";
+@import "app/author-note";

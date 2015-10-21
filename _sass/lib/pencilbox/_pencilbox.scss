@@ -1,0 +1,22 @@
+/* 
+* PENCILBOX 
+* Author: Sri Kadimisetty <sri.io>
+* Version: 0.5 Oct 2015
+* 
+* Notes:
+* 1. Element in a `whole` class occupies the entire width.
+* 2. Element in a `half` class occupies half the width.
+* 3. A `half` has to be placed inside a `whole`.
+* 4. A `whole` can contain two `half`s.
+* 5. A `padded-half` provides some padding towards the center.
+* 6. Use two `padded-half`s to have a gutter in the center.
+* 7. There is no parent "grid container".
+*
+* TODO: 
+* 1. Extract Percentages as a Math Calculation.
+* 2. Make grid availabe as mixins to avoid html pollution.
+*/
+
+
+@import "config";
+@import "grid";

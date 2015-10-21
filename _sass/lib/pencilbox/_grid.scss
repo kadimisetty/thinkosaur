@@ -1,34 +1,5 @@
 @charset "UTF-8";
 
-/* 
-* PENCILBOX 
-* Author:
-* Sri Kadimisetty <sri.io>
-* Version 0.5 
-* Oct 2015
-* 
-* Notes:
-* 1. Element in a `whole` class occupies the entire width.
-* 2. Element in a `half` class occupies half the width.
-* 3. A `half` has to be placed inside a `whole`.
-* 4. A `whole` can contain two `half`s.
-* 5. A `padded-half` provides some padding towards the center.
-* 6. Use two `padded-half`s to have a gutter in the center.
-* 7. There is no parent "grid container".
-*
-* TODO: 
-* 1. Extract Percentages as a Math Calculation.
-*/
-
-// VARIABLE SETTINGS
-$pb-grid-force-center: true !default;
-// - Desktop
-$pb-grid-max-width: 640px !default;
-$pb-grid-gutter-width: 40px !default;
-// - Mobile
-$pb-grid-mobile-max-width: 320px !default;
-
-
 // HELPER MIXINS
 // - Clearfix
 @mixin clearfix {
@@ -44,11 +15,12 @@ $pb-grid-mobile-max-width: 320px !default;
 
 
 // GRID
-.pb-whole {
+.pb {
     box-sizing: border-box;
-    @if $pb-grid-force-center == true { margin: 0 auto } 
-    max-width: $pb-grid-max-width;
     min-height: 1px;
+    max-width: $pb-grid-max-width;
+    @if $pb-grid-force-center == true { 
+        margin: 0 auto } 
 
     @include clearfix; 
     @include mobile {

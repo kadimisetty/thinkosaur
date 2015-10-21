@@ -1,0 +1,22 @@
+
+// STYLES
+body {
+    // Position
+    margin: 0 auto;
+
+    // Type
+    font-family: Geomanist, sans-serif;
+    font-size: 18px;
+
+    // Color
+    background-color: $color__background;
+    color: $color__text;
+
+    // Links
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: $color__link; 
+        &:hover { color: $color__link--hover; } 
+        &:active { color: $color__link--active; } 
+} }

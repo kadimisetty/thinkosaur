@@ -1,0 +1,9 @@
+.dino-divider {
+    height: 320px;
+
+    background-color: pink;
+
+    @include mobile {
+        display: none;
+    }
+}
