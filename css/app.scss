@@ -4,8 +4,8 @@
 
 
 /* DEPENDENCIES */
-// - Normalize via Bower
-// @import "lib/bower-normalize";
+// - CSS Reset by Eric Meyer
+@import "lib/cssreset/_cssreset.scss";
 
 // - Animate.scss
 
@@ -19,12 +19,4 @@
 // @import "settings/colors";
 
 // - Application
-// @import "app/body";
-// @import "app/comments";
-// @import "app/footer";
-// @import "app/header";
-// @import "app/notes";
-// @import "app/player";
-// @import "app/subscription";
-// @import "app/simple-subscription";
-// @import "app/title-cards";
+@import "app/programmer-callout.scss";
