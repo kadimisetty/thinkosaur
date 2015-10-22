@@ -1,21 +1,41 @@
 .programmer-callout {
-    margin-top: 9.22222222222em;
-    margin-bottom: 7.22222222222em;
+    margin-top: 10.22222222222rem;
+    margin-bottom: 1.22222222222rem;
+    max-width: 31.1111111111em;
     text-align: center;
 
     @include mobile {
-        margin-top: 2em;
-        margin-bottom: 1em;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         text-align: left; }
 
     h1, h2 { 
         font-weight: normal;
-        font-size: 2.77777777778em; 
-        @include mobile { font-size: 1.3333333333em; } }
+        font-size: 3.1111111111rem;
+        line-height: 116%;
+        @include mobile { font-size: 1.3333333333rem; } }
 
     h2 {
-        margin-top: 0.3em;
-        @include mobile { margin-top: 0.2em;}
+        margin-top: 1.3rem;
+        @include mobile { 
+            margin-top: 0.2rem;
+            &:after {
+                display: inline;
+                content: " —"; // em dash UTF-8
+                opacity: 0.4;
+
+        }}
+    }
+
+    &:after {
+        margin: 0 auto;
+        font-size: 6rem;
+        content: "▾"; // downward facing arrow UTF-8
+        opacity: 0.4;
+
+        @include mobile {
+            display: none;
+        }
     }
 }
 

@@ -1,9 +1,17 @@
 .author-note {
-    .message {
-        p {
-            font-size: 1.4em;
-            margin-bottom: 1em;
-        }
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    @include mobile {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        font-size: 1.1666666666rem;
+        font-size: 1.5rem;
+        line-height: 124%;
     }
 
 }

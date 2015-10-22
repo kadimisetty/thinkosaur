@@ -1,13 +1,16 @@
 .shows-listing {
+    margin-bottom: 3rem;
     text-align: center;
-    font-size: 3.1111111111em;
+    font-size: 3.5555555555rem;
     font-weight: bold;
 
     @include mobile {
         text-align: left; 
-        font-size: 2.3333333333em;}
+        font-size: 2.3333333333rem;
+        margin-bottom: 1rem;
+    }
 
     li {
-        margin-bottom: 0.3em;
-        @include mobile { } }
+        margin-bottom: 1.4rem;
+        @include mobile { margin-bottom: 0.6rem;} }
 }

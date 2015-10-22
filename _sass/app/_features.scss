@@ -1,3 +1,48 @@
 .features {
-    border: 1px solid red;
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    @include mobile {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 1.3333333333rem;
+    }
+
+
+    .feature {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        @include mobile {
+            margin-top: 0;
+        }
+    }
+
+    img {
+        display: block;
+        float: left;
+        margin-right: 1rem;
+        border-radius: 0.3em;
+
+    }
+
+    h2, h3 {
+    }
+
+    h2 {
+        color: $color__text--heading;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    h3 {
+        margin-top: 0.2rem;
+        font-size: 1.1666666666rem;
+        line-height: 124%;
+    }
+
 }
