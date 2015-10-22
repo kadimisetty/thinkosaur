@@ -4,5 +4,7 @@
     font-size: 3.0000000000rem;
     text-align: center;
 
-    @include mobile {}
-}
+    @include mobile {
+        margin-top: 0rem;
+        text-align: left;
+        font-size: 2rem;} }

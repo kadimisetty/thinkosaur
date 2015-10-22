@@ -3,13 +3,17 @@
     margin-bottom: 3.3333333333rem;
     text-align: center;
 
-    @include mobile { }
+    @include mobile { 
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;}
 
     h1 {
         font-size: 3.5555555555rem;
         font-weight: bold;
 
-        @include mobile { } }
+        @include mobile { 
+            font-size: 2rem; } }
 
     h2 {
         padding-top: 0.8rem;
@@ -17,4 +21,6 @@
         margin: 0 auto;
         font-size: 1.3333333333rem;
 
-        @include mobile { } } }
+        @include mobile { 
+            max-width: 100%;
+            font-size: 2rem; } } }
