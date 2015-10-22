@@ -1,8 +1,12 @@
 .shows-listing {
+
     margin-bottom: 3rem;
     text-align: center;
     font-size: 3.5555555555rem;
     font-weight: bold;
+
+    // Animation
+    @include fadeInUp($duration: 1s, $delay: 0s);
 
     @include mobile {
         text-align: left; 
@@ -12,5 +16,4 @@
 
     li {
         margin-bottom: 1.4rem;
-        @include mobile { margin-bottom: 0.6rem;} }
-}
+        @include mobile { margin-bottom: 0.6rem;} } }
