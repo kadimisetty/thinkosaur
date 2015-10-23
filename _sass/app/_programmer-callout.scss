@@ -4,6 +4,8 @@
     max-width: 31.1111111111em;
     text-align: center;
 
+    @include fadeInDown($duration: 0.5s);
+    
     @include mobile {
         margin-top: 2rem;
         margin-bottom: 1rem;
@@ -22,7 +24,7 @@
             &:after {
                 display: inline;
                 content: " —"; // em dash UTF-8
-                opacity: 0.4;
+                opacity: 0.3;
 
         }}
     }
@@ -31,7 +33,7 @@
         margin: 0 auto;
         font-size: 6rem;
         content: "▾"; // downward facing arrow UTF-8
-        opacity: 0.4;
+        opacity: 0.3;
 
         @include mobile {
             display: none;
