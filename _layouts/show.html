@@ -2,7 +2,10 @@
 layout: default
 ---
 
-{% include show-heading.html %}
-{% include episodes-listing.html %}
+{% comment %}Retrieve show information from data files{% endcomment %}
+{% assign show = site.data.shows[page.show_id] %}}
+
+{% include show-heading.html name=show.name description=show.description %}
+{% include episodes-listing.html seasons=show.seasons %}
 {% include dino-divider.html %}
 {% include watch-more-poster.html %}

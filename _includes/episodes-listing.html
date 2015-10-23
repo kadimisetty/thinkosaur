@@ -1,22 +1,18 @@
 <section class="pb episodes-listing">
 
-<h1>Season One <span>Command Line Communication</span></h1>
+  {% for season in include.seasons %}
+    <h1>Season {{ season.index }} <span>{{ season.topic }}</span></h1>
+    <ul>
+      {% for episode in season.episodes %}
+        <li><a class="venobox"
+               data-type="vimeo" 
+               href="http://vimeo.com/{{ episode.vimeo_ID }}">{{ episode.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <ul>
-
-    <li><a class="venobox" data-type="vimeo" href="http://vimeo.com/75976293">My Vimeo video</a></li>
-    <li><a href="#">Directory Structure</a></li>
-    <li><a href="#">Navigation</a></li>
-    <li><a href="#">Environment Variables</a></li>
-    <li><a href="#">Pipes</a></li>
-    <li><a href="#">Standard Streams</a></li>
-    <li><a href="#">Locales</a></li>
-    <li><a href="#">Globbing &amp; Wildcards</a></li>
-    <li><a href="#">Job Control</a></li>
-  </ul>
-
-  <h3>Hosted by <span>Sri Kadimisetty</span></h3>
+  <h3>Hosted by <span>{{ season.host }}</span></h3>
+  {% endfor %}
 
   <script> {% include venobox-init.js %} </script>
-
 </section>

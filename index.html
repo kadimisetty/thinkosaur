@@ -2,8 +2,14 @@
 layout: default
 ---
 
+{% comment %}Retrieve Clean list of Shows{% endcomment %}
+{% assign shows = "" | split: "|" %}
+{% for show_hash in site.data.shows %}
+  {% assign shows = shows | push:show_hash[1] %}
+{% endfor %}
+
 {% include programmer-callout.html %}
-{% include shows-listing.html %}
+{% include shows-listing.html shows=shows%}
 {% include dino-divider.html %}
 {% include features.html %}
 {% include dino-divider.html %}

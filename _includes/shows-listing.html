@@ -1,14 +1,17 @@
 <section class="pb shows-listing">
+  <ul>
+    <!-- Running Shows :) -->
+    {% for show in include.shows %}
+      <li><a href="{{ show.permalink }}">{{ show.name }}</a>
+    {% endfor %}
 
-<ul>
-  <li><a href="#">Automaton</a></li>
-  <li><a href="#">Mac Squared</a></li>
-  <li><a href="#">py candy</a></li>
-  <li><a href="#">vim.watch</a></li>
-  <li><a href="#">FAN CSS TIC</a></li>
-  <li><a href="#">Hash Bang</a></li>
-  <li>Hand Paper Pencil</li>
-  <li>NS Cupcake</li>
-</ul>
-
+    <!-- Upcoming Shows -->
+    <li>Automaton</li>
+    <li>Mac Squared</li>
+    <li>py candy</li>
+    <li>FAN CSS TIC</li>
+    <li>Hash Bang</li>
+    <li>Hand Paper Pencil>
+    <li>NS Cupcake</li>
+  </ul>
 </section>

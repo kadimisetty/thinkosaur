@@ -1,0 +1,28 @@
+name: vim.watch
+permalink_ID: vimwatch
+description: Wander the landscapes of the editor extraordinaire
+seasons:
+  - index: 1
+    topic: Command Line Arguments
+    host: Sri Kadimisetty
+    episodes:
+      - index: 1
+        title: Views
+        publication_date: 2015-10-13
+        vimeo_ID: 75976293
+      - index: 2
+        title: Session
+        publication_date: 2015-10-13
+        vimeo_ID: 75976293
+      - index: 3
+        title: Session Options
+        publication_date: 2015-10-13
+        vimeo_ID: 75976293
+      - index: 4
+        title: viminfo
+        publication_date: 2015-10-13
+        vimeo_ID: 75976293
+
+
+
+
