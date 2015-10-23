@@ -1,7 +1,14 @@
 <section class="pb episodes-listing">
 
   {% for season in include.seasons %}
-    <h1>Season {{ season.index }} <span>{{ season.topic }}</span></h1>
+
+    {% comment %}Get Season Index as a Word{% endcomment %}
+
+    {% capture seasonInWords %}
+      {% include numbers-to-words-converter number=season.index %}
+    {% endcapture %}
+
+    <h1>Season {{ seasonInWords | capitalize }} <span>{{ season.topic }}</span></h1>
     <ul>
       {% for episode in season.episodes %}
         <li><a class="venobox"

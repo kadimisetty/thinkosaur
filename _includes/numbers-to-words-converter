@@ -1,0 +1,204 @@
+{% case include.number %}
+{% when 0 %}
+zero
+{% when 1 %}
+one
+{% when 2 %}
+two
+{% when 3 %}
+three
+{% when 4 %}
+four
+{% when 5 %}
+five
+{% when 6 %}
+six
+{% when 7 %}
+seven
+{% when 8 %}
+eight
+{% when 9 %}
+nine
+{% when 10 %}
+ten
+{% when 11 %}
+eleven
+{% when 12 %}
+twelve
+{% when 13 %}
+thirteen
+{% when 14 %}
+fourteen
+{% when 15 %}
+fifteen
+{% when 16 %}
+sixteen
+{% when 17 %}
+seventeen
+{% when 18 %}
+eighteen
+{% when 19 %}
+nineteen
+{% when 20 %}
+twenty
+{% when 21 %}
+twenty one
+{% when 22 %}
+twenty two
+{% when 23 %}
+twenty three
+{% when 24 %}
+twenty four
+{% when 25 %}
+twenty five
+{% when 26 %}
+twenty six
+{% when 27 %}
+twenty seven
+{% when 28 %}
+twenty eight
+{% when 29 %}
+twenty nine
+{% when 30 %}
+thirty
+{% when 31 %}
+thirty one
+{% when 32 %}
+thirty two
+{% when 33 %}
+thirty three
+{% when 34 %}
+thirty four
+{% when 35 %}
+thirty five
+{% when 36 %}
+thirty six
+{% when 37 %}
+thirty seven
+{% when 38 %}
+thirty eight
+{% when 39 %}
+thirty nine
+{% when 40 %}
+forty
+{% when 41 %}
+forty one
+{% when 42 %}
+forty two
+{% when 43 %}
+forty three
+{% when 44 %}
+forty four
+{% when 45 %}
+forty five
+{% when 46 %}
+forty six
+{% when 47 %}
+forty seven
+{% when 48 %}
+forty eight
+{% when 49 %}
+forty nine
+{% when 50 %}
+fifty
+{% when 51 %}
+fifty one
+{% when 52 %}
+fifty two
+{% when 53 %}
+fifty three
+{% when 54 %}
+fifty four
+{% when 55 %}
+fifty five
+{% when 56 %}
+fifty six
+{% when 57 %}
+fifty seven
+{% when 58 %}
+fifty eight
+{% when 59 %}
+fifty nine
+{% when 60 %}
+sixty
+{% when 61 %}
+sixty one
+{% when 62 %}
+sixty two
+{% when 63 %}
+sixty three
+{% when 64 %}
+sixty four
+{% when 65 %}
+sixty five
+{% when 66 %}
+sixty six
+{% when 67 %}
+sixty seven
+{% when 68 %}
+sixty eight
+{% when 69 %}
+sixty nine
+{% when 70 %}
+seventy
+{% when 71 %}
+seventy one
+{% when 72 %}
+seventy two
+{% when 73 %}
+seventy three
+{% when 74 %}
+seventy four
+{% when 75 %}
+seventy five
+{% when 76 %}
+seventy six
+{% when 77 %}
+seventy seven
+{% when 78 %}
+seventy eight
+{% when 79 %}
+seventy nine
+{% when 80 %}
+eighty
+{% when 81 %}
+eighty one
+{% when 82 %}
+eighty two
+{% when 83 %}
+eighty three
+{% when 84 %}
+eighty four
+{% when 85 %}
+eighty five
+{% when 86 %}
+eighty six
+{% when 87 %}
+eighty seven
+{% when 88 %}
+eighty eight
+{% when 89 %}
+eighty nine
+{% when 90 %}
+ninety
+{% when 91 %}
+ninety one
+{% when 92 %}
+ninety two
+{% when 93 %}
+ninety three
+{% when 94 %}
+ninety four
+{% when 95 %}
+ninety five
+{% when 96 %}
+ninety six
+{% when 97 %}
+ninety seven
+{% when 98 %}
+ninety eight
+{% when 99 %}
+ninety nine
+{% when 100 %}
+one hundred
+{% endcase %}
