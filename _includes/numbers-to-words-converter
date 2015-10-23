@@ -1,204 +1,204 @@
 {% case include.number %}
 {% when 0 %}
-zero
+Zero
 {% when 1 %}
-one
+One
 {% when 2 %}
-two
+Two
 {% when 3 %}
-three
+Three
 {% when 4 %}
-four
+Four
 {% when 5 %}
-five
+Five
 {% when 6 %}
-six
+Six
 {% when 7 %}
-seven
+Seven
 {% when 8 %}
-eight
+Eight
 {% when 9 %}
-nine
+Nine
 {% when 10 %}
-ten
+Ten
 {% when 11 %}
-eleven
+Eleven
 {% when 12 %}
-twelve
+Twelve
 {% when 13 %}
-thirteen
+Thirteen
 {% when 14 %}
-fourteen
+Fourteen
 {% when 15 %}
-fifteen
+Fifteen
 {% when 16 %}
-sixteen
+Sixteen
 {% when 17 %}
-seventeen
+Seventeen
 {% when 18 %}
-eighteen
+Eighteen
 {% when 19 %}
-nineteen
+Nineteen
 {% when 20 %}
-twenty
+Twenty
 {% when 21 %}
-twenty one
+Twenty One
 {% when 22 %}
-twenty two
+Twenty Two
 {% when 23 %}
-twenty three
+Twenty Three
 {% when 24 %}
-twenty four
+Twenty Four
 {% when 25 %}
-twenty five
+Twenty Five
 {% when 26 %}
-twenty six
+Twenty Six
 {% when 27 %}
-twenty seven
+Twenty Seven
 {% when 28 %}
-twenty eight
+Twenty Eight
 {% when 29 %}
-twenty nine
+Twenty Nine
 {% when 30 %}
-thirty
+Thirty
 {% when 31 %}
-thirty one
+Thirty One
 {% when 32 %}
-thirty two
+Thirty Two
 {% when 33 %}
-thirty three
+Thirty Three
 {% when 34 %}
-thirty four
+Thirty Four
 {% when 35 %}
-thirty five
+Thirty Five
 {% when 36 %}
-thirty six
+Thirty Six
 {% when 37 %}
-thirty seven
+Thirty Seven
 {% when 38 %}
-thirty eight
+Thirty Eight
 {% when 39 %}
-thirty nine
+Thirty Nine
 {% when 40 %}
-forty
+Forty
 {% when 41 %}
-forty one
+Forty One
 {% when 42 %}
-forty two
+Forty Two
 {% when 43 %}
-forty three
+Forty Three
 {% when 44 %}
-forty four
+Forty Four
 {% when 45 %}
-forty five
+Forty Five
 {% when 46 %}
-forty six
+Forty Six
 {% when 47 %}
-forty seven
+Forty Seven
 {% when 48 %}
-forty eight
+Forty Eight
 {% when 49 %}
-forty nine
+Forty Nine
 {% when 50 %}
-fifty
+Fifty
 {% when 51 %}
-fifty one
+Fifty One
 {% when 52 %}
-fifty two
+Fifty Two
 {% when 53 %}
-fifty three
+Fifty Three
 {% when 54 %}
-fifty four
+Fifty Four
 {% when 55 %}
-fifty five
+Fifty Five
 {% when 56 %}
-fifty six
+Fifty Six
 {% when 57 %}
-fifty seven
+Fifty Seven
 {% when 58 %}
-fifty eight
+Fifty Eight
 {% when 59 %}
-fifty nine
+Fifty Nine
 {% when 60 %}
-sixty
+Sixty
 {% when 61 %}
-sixty one
+Sixty One
 {% when 62 %}
-sixty two
+Sixty Two
 {% when 63 %}
-sixty three
+Sixty Three
 {% when 64 %}
-sixty four
+Sixty Four
 {% when 65 %}
-sixty five
+Sixty Five
 {% when 66 %}
-sixty six
+Sixty Six
 {% when 67 %}
-sixty seven
+Sixty Seven
 {% when 68 %}
-sixty eight
+Sixty Eight
 {% when 69 %}
-sixty nine
+Sixty Nine
 {% when 70 %}
-seventy
+Seventy
 {% when 71 %}
-seventy one
+Seventy One
 {% when 72 %}
-seventy two
+Seventy Two
 {% when 73 %}
-seventy three
+Seventy Three
 {% when 74 %}
-seventy four
+Seventy Four
 {% when 75 %}
-seventy five
+Seventy Five
 {% when 76 %}
-seventy six
+Seventy Six
 {% when 77 %}
-seventy seven
+Seventy Seven
 {% when 78 %}
-seventy eight
+Seventy Eight
 {% when 79 %}
-seventy nine
+Seventy Nine
 {% when 80 %}
-eighty
+Eighty
 {% when 81 %}
-eighty one
+Eighty One
 {% when 82 %}
-eighty two
+Eighty Two
 {% when 83 %}
-eighty three
+Eighty Three
 {% when 84 %}
-eighty four
+Eighty Four
 {% when 85 %}
-eighty five
+Eighty Five
 {% when 86 %}
-eighty six
+Eighty Six
 {% when 87 %}
-eighty seven
+Eighty Seven
 {% when 88 %}
-eighty eight
+Eighty Eight
 {% when 89 %}
-eighty nine
+Eighty Nine
 {% when 90 %}
-ninety
+Ninety
 {% when 91 %}
-ninety one
+Ninety One
 {% when 92 %}
-ninety two
+Ninety Two
 {% when 93 %}
-ninety three
+Ninety Three
 {% when 94 %}
-ninety four
+Ninety Four
 {% when 95 %}
-ninety five
+Ninety Five
 {% when 96 %}
-ninety six
+Ninety Six
 {% when 97 %}
-ninety seven
+Ninety Seven
 {% when 98 %}
-ninety eight
+Ninety Eight
 {% when 99 %}
-ninety nine
+Ninety Nine
 {% when 100 %}
-one hundred
+One Hundred
 {% endcase %}

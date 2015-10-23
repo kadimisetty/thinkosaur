@@ -8,7 +8,7 @@
       {% include numbers-to-words-converter number=season.index %}
     {% endcapture %}
 
-    <h1>Season {{ seasonInWords | capitalize }} <span>{{ season.topic }}</span></h1>
+    <h1>Season {{ seasonInWords }} <span>{{ season.topic }}</span></h1>
     <ul>
       {% for episode in season.episodes %}
         <li><a class="venobox"
