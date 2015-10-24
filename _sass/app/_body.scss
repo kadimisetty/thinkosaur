@@ -17,6 +17,12 @@ body {
         text-decoration: none;
         font-weight: bold;
         color: $color__link; 
-        &:hover { color: $color__link--hover; } 
-        &:active { color: $color__link--active; } 
+
+        &:hover { 
+            // color: $color__link--hover; 
+            opacity: 0.4; } 
+        &:active { 
+            // color: $color__link--active; 
+            opacity: 0.2}
+
 } }

@@ -1,0 +1,5 @@
+{% for host in site.data.hosts %}
+  {% if host.id == include.host_id %}
+    <a href="http://twitter.com/{{ host.twitter }}">{{ host.name }}</a>
+  {% endif %}
+{% endfor %}

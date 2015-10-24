@@ -1,0 +1,8 @@
+name: py candy
+permalink: pycandy
+description: And now for something completely pythonic
+seasons:
+  - index: 1
+    topic: Reading and Saving Configurations
+    host_id: sri
+    episodes:

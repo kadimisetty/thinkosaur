@@ -3,6 +3,9 @@
 
     text-align: center;
 
+    // Animation
+    @include fadeInUp($duration: 1s, $delay: 0s);
+
     @include mobile {
         margin-bottom: 2rem; }
 

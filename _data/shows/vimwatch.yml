@@ -3,25 +3,25 @@ permalink: vimwatch
 description: Wander the landscapes of the editor extraordinaire
 seasons:
   - index: 1
-    topic: Command Line Arguments
-    host: Sri Kadimisetty
+    topic: Workspace Persistence
+    host_id: sri
     episodes:
       - index: 1
         title: Views
         publication_date: 2015-10-13
-        vimeo_ID: 75976293
+        vimeo_ID: 120830517
       - index: 2
-        title: Session
+        title: Sessions
         publication_date: 2015-10-13
-        vimeo_ID: 75976293
+        vimeo_ID: 121657990
       - index: 3
         title: Session Options
         publication_date: 2015-10-13
-        vimeo_ID: 75976293
+        vimeo_ID: 122938462
       - index: 4
         title: viminfo
         publication_date: 2015-10-13
-        vimeo_ID: 75976293
+        vimeo_ID: 125022196
 
 
 
