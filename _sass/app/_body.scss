@@ -19,10 +19,7 @@ body {
         color: $color__link; 
 
         &:hover { 
-            // color: $color__link--hover; 
-            opacity: 0.4; } 
+            opacity: $opacity__link--hover; } 
         &:active { 
-            // color: $color__link--active; 
-            opacity: 0.2}
-
-} }
+            opacity: $opacity__link--active; } } 
+}
