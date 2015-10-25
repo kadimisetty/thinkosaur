@@ -5,8 +5,8 @@ body {
     margin: 0 auto;
 
     // Type
-    font-family: Geomanist, sans-serif;
-    font-size: 18px;
+    font-family: $fontfamily;
+    font-size: $fontsize--base;
 
     // Color
     background-color: $color__background;
