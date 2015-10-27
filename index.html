@@ -8,6 +8,7 @@ layout: default
   {% assign shows = shows | push:show_hash[1] %}
 {% endfor %}
 
+{% include notReadyMessage.html %}
 {% include programmer-callout.html %}
 {% include shows-listing.html shows=shows%}
 {% include dino-divider.html %}
