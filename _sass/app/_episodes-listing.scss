@@ -13,7 +13,7 @@
         margin-bottom: 1rem;
         
         @include mobile {
-            font-size: 2rem;
+            font-size: 1.3333333333rem; 
             margin-bottom: 1rem;
             text-align: left; } 
 
@@ -35,17 +35,11 @@
             font-weight: bold; 
         
             @include mobile {
-                display: block;
-            }
-        
-        }
+                display: block; } }
 
         @include mobile {
-            text-align: left;
-            font-size: 2rem;
-        }
-    
-    }
+            font-size: 1.3333333333rem; 
+            text-align: left; } }
 
 
 

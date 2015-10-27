@@ -14,9 +14,13 @@ body {
 
     // Links
     a {
+        // Prepare to move up on hover
+        position: relative;
+
+        color: $color__link; 
+
         text-decoration: none;
         font-weight: bold;
-        color: $color__link; 
 
         // Transitions
         transition: opacity 0.1s ease-out; 
@@ -25,9 +29,18 @@ body {
             opacity: $opacity__link--hover; 
 
             // Transitions
-            // transition: opacity 0.1s ease-in;
             transition: opacity 0.1s linear; 
+
+            // Move up a little relatively
+            top: -2px;
+            transition: top 0.1s ease-in; 
         } 
+
         &:active { 
-            opacity: $opacity__link--active; } } 
+            opacity: $opacity__link--active; 
+
+            // Bring down a little relatively
+            top: 2px;
+            transition: top 0.1s linear; 
+    } } 
 }

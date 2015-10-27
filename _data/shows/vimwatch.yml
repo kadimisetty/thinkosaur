@@ -3,7 +3,7 @@ permalink: vimwatch
 description: Wander the landscapes of the editor extraordinaire
 seasons:
   - index: 1
-    topic: Workspace Persistence
+    topic: 
     host_id: sri
     episodes:
       - index: 1
