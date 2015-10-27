@@ -18,8 +18,16 @@ body {
         font-weight: bold;
         color: $color__link; 
 
+        // Transitions
+        transition: opacity 0.1s ease-out; 
+
         &:hover { 
-            opacity: $opacity__link--hover; } 
+            opacity: $opacity__link--hover; 
+
+            // Transitions
+            // transition: opacity 0.1s ease-in;
+            transition: opacity 0.1s linear; 
+        } 
         &:active { 
             opacity: $opacity__link--active; } } 
 }
