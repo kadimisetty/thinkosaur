@@ -1,45 +1,45 @@
-// $font-dir:;
+$font-dir:'/assets/fonts/geomanist/';
 
 // Lighter (Geomanist Light)
 @font-face{ 
     font-family: 'Geomanist';
     font-weight: lighter;
-    src: url('geomanist-thin-webfont.eot');
-    src: url('geomanist-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geomanist-thin-webfont.woff') format('woff'),
-         url('geomanist-thin-webfont.ttf') format('truetype'),
-         url('geomanist-thin-webfont.svg#webfont') format('svg');
+    src: url($font-dir + 'geomanist-light-webfont.eot');
+    src: url($font-dir + 'geomanist-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-dir + 'geomanist-light-webfont.woff') format('woff'),
+         url($font-dir + 'geomanist-light-webfont.ttf') format('truetype'),
+         url($font-dir + 'geomanist-light-webfont.svg#webfont') format('svg');
 }
 // Normal (Geomanist Regular)
 @font-face{ 
     font-family: 'Geomanist';
     font-weight: normal;
-    src: url('geomanist-thin-webfont.eot');
-    src: url('geomanist-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geomanist-thin-webfont.woff') format('woff'),
-         url('geomanist-thin-webfont.ttf') format('truetype'),
-         url('geomanist-thin-webfont.svg#webfont') format('svg');
+    src: url($font-dir + 'geomanist-regular-webfont.eot');
+    src: url($font-dir + 'geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-dir + 'geomanist-regular-webfont.woff') format('woff'),
+         url($font-dir + 'geomanist-regular-webfont.ttf') format('truetype'),
+         url($font-dir + 'geomanist-regular-webfont.svg#webfont') format('svg');
 }
 
 // Bold (Geomanist Bold)
 @font-face{ 
     font-family: 'Geomanist';
     font-weight: bold;
-    src: url('geomanist-thin-webfont.eot');
-    src: url('geomanist-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geomanist-thin-webfont.woff') format('woff'),
-         url('geomanist-thin-webfont.ttf') format('truetype'),
-         url('geomanist-thin-webfont.svg#webfont') format('svg');
+    src: url($font-dir + 'geomanist-bold-webfont.eot');
+    src: url($font-dir + 'geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-dir + 'geomanist-bold-webfont.woff') format('woff'),
+         url($font-dir + 'geomanist-bold-webfont.ttf') format('truetype'),
+         url($font-dir + 'geomanist-bold-webfont.svg#webfont') format('svg');
 }
 
-// Bolder (Geomanist Ultra)
+// Bolder (Geomanist Black)
 @font-face{ 
     font-family: 'Geomanist';
     font-weight: bolder;
-    src: url('geomanist-thin-webfont.eot');
-    src: url('geomanist-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('geomanist-thin-webfont.woff') format('woff'),
-         url('geomanist-thin-webfont.ttf') format('truetype'),
-         url('geomanist-thin-webfont.svg#webfont') format('svg');
+    src: url($font-dir + 'geomanist-black-webfont.eot');
+    src: url($font-dir + 'geomanist-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url($font-dir + 'geomanist-black-webfont.woff') format('woff'),
+         url($font-dir + 'geomanist-black-webfont.ttf') format('truetype'),
+         url($font-dir + 'geomanist-black-webfont.svg#webfont') format('svg');
 }
 
