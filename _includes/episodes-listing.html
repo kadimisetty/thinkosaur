@@ -13,10 +13,9 @@
     </h1>
     <ul>
       {% for episode in season.episodes reversed %}
-        <li><a class="venobox"
+        <li> <a class="venobox"
                data-type="vimeo" 
-               href="http://vimeo.com/{{ episode.vimeo_ID }}">{{ episode.title }}</a>
-        </li>
+               href="http://vimeo.com/{{ episode.vimeo_ID }}">{{ episode.title }}</a> </li>
       {% endfor %}
     </ul>
 

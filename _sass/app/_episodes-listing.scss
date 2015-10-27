@@ -31,17 +31,9 @@
         margin-top: 1rem;
         font-size: 1rem;
 
-        span {
-            font-weight: bold; 
-        
-            @include mobile {
-                display: block; } }
-
         @include mobile {
             font-size: 1.3333333333rem; 
             text-align: left; } }
-
-
 
     li {
         font-size: 2.0000000000rem;
@@ -65,5 +57,6 @@
 
         a {
             font-weight: normal;
-        } }
+        } 
+    }
 }
