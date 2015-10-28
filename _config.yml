@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Better your skills as a programmer by watching short shows.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
-twitter_username: thinkosaurapp
+twitter_username: hithinkosaur
 github_username:  thinkosaur
 
 # Build settings
