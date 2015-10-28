@@ -2,7 +2,7 @@
   <ul>
     <!-- Running Shows :) -->
     {% for show in include.shows reversed%}
-      <li><a href="{{ show.permalink | prepend: site.baseurl }}">{{ show.name }}</a>
+      <li><a href="{{ show.permalink | prepend: site.baseurl }}">{{ show.name }}</a></li>
     {% endfor %}
 
     <!-- Upcoming Shows -->
