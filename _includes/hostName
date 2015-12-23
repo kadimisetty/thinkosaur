@@ -1,5 +1,0 @@
-{% for host in site.data.hosts %}
-  {% if host.id == include.host_id %}
-    {{ host.name }}
-  {% endif %}
-{% endfor %}
