@@ -14,21 +14,12 @@
 @import "lib/saffron/saffron";
 
 
-// STYLES
-// - Settings
+// SETTINGS
+@import "settings/typography";
 @import "settings/colors";
 @import "settings/opacity";
 @import "settings/geomanist";
 @import "settings/fonts";
 
-// - Application
+// APPLICATION
 @import "app/body";
-@import "app/notReadyMessage";
-@import "app/programmer-callout";
-@import "app/shows-listing";
-@import "app/dino-divider";
-@import "app/features";
-@import "app/author-note";
-@import "app/show-heading";
-@import "app/episodes-listing";
-@import "app/watch-more-poster";
