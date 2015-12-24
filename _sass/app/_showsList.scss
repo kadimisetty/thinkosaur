@@ -1,4 +1,5 @@
 .showsList {
+    margin-bottom: 3rem;
     text-align: center;
     font-size: 3.6rem;
     font-weight: bold;
@@ -12,15 +13,14 @@
         a {
             display: block;
             min-height: 5rem;
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.4rem; 
         }
 
 
         a:hover {
             position: relative;
-            font-size: 3rem;
+            font-size: 3.2rem;
 
-            // Transitions
             // Hover ON
             transition: font-size 0.2s ease-out; 
 
@@ -30,6 +30,7 @@
                 content: attr(data-desc);
                 font-size: 16px;
                 color: $color__text--subheading;
+                color: $color__link;
                 @include fadeInUp($duration: 0.2s, $delay: 0s);
             }
         }
