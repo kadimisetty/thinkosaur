@@ -1,2 +1,19 @@
 .billboard {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+    h2 { margin-top: 1rem; }
+
+
+    &:after {
+        margin: 0 auto;
+        padding-top: 0;
+        // margin-top:c -;
+        font-size: 2rem;
+        content: "▾"; // downward facing arrow UTF-8
+        opacity: 0.5;
+    }
+
+    @include mobile { display: none; }
 }
