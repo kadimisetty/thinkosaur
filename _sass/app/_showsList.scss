@@ -2,7 +2,6 @@
     margin-bottom: 3rem;
     text-align: center;
     font-size: 3.6rem;
-    font-weight: bold;
 
     @include fadeInUp($duration: 1s, $delay: 0s);
 
@@ -18,18 +17,17 @@
 
 
         a:hover {
-            position: relative;
-            font-size: 3.2rem;
+            font-size: 3rem;
 
             // Hover ON
             transition: font-size 0.2s ease-out; 
 
             &:after {
-                margin-top: 0.2rem;
+                margin-top: 0.6rem;
                 display: block;
                 content: attr(data-desc);
-                font-size: 16px;
-                color: $color__text--subheading;
+                font-size: 1rem;
+                font-weight: bold;
                 color: $color__link;
                 @include fadeInUp($duration: 0.2s, $delay: 0s);
             }

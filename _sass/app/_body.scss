@@ -6,8 +6,13 @@ body {
     // Type
     font-family: $fontfamily;
     font-size: $fontsize--base;
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: normal;
+    line-height: 1.625rem;
+
+    p {
+        margin-bottom: 1.625rem;
+    }
 
     h1, h2, h3, h4, h5, h6 {
         font-weight: 500;

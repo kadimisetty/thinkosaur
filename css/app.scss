@@ -15,11 +15,13 @@
 
 
 // SETTINGS
-@import "settings/typography";
-@import "settings/colors";
-@import "settings/opacity";
+@import "settings/mixins";
 @import "settings/geomanist";
 @import "settings/fonts";
+@import "settings/typography";
+@import "settings/opacity";
+@import "settings/colors";
+@import "settings/elements";
 
 // APPLICATION
 @import "app/body";
@@ -27,3 +29,7 @@
 @import "app/showsList";
 @import "app/divider";
 @import "app/features";
+@import "app/authorNote";
+@import "app/showTitleWithDescription";
+@import "app/thinkosaurPoster";
+@import "app/episodesList";

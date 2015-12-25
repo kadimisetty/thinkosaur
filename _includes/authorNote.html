@@ -1,6 +1,7 @@
 <section class="authorNote pb">
 
 <div class="profilePhoto pb-half">
+    {% include assetImage.html filename="profilePhoto.png" alt="profile photo" %}
 </div>
 
 <div class="message pb-half">
@@ -11,21 +12,14 @@
   occasional updates.</p>
 
 
-  <form>
-    <div>
-      <input type="email" id="mail" />
-    </div>
 
-    <div class="button">
-      <button type="submit">Subscribe</button>
-    </div>
-  </form>
+  {% include mailchimpForm.html %}
 
 
+  <p>Also hey, great job working on your skillset.
+  Keep on learning!
 
-
-  <p>And hey, great job working on your skillset.
-Keep on learning! — Sri Kadimisetty</p>
+  <p>— Sri Kadimisetty</p>
 
 </div>
 

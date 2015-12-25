@@ -1,2 +1,50 @@
 .episodesList {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+
+    @include fadeInUp($duration: 1s, $delay: 0s);
+
+    li {
+            min-height: 6rem;
+            position: relative;
+
+            border-top: 1px solid darken($color__background, 4%);
+            border-left: 1px solid darken($color__background, 4%);
+            border-right: 1px solid darken($color__background, 4%);
+
+            &:last-child { 
+                border-bottom: 1px solid darken($color__background, 4%); 
+            }
+
+
+
+        a {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+            font-weight: normal;
+            font-size: 2rem;
+        }
+
+        a:hover {
+            font-size: 1.6rem;
+
+            // Hover ON
+            transition: font-size 0.1s ease-out; 
+
+            &:after {
+                display: block;
+                content: attr(data-desc);
+                font-size: 1rem;
+                font-weight: bold;
+                color: $color__link;
+                @include fadeInUp($duration: 0.2s, $delay: 0s);
+            }
+        }
+    }
 }

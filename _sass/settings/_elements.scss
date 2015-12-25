@@ -1,0 +1,52 @@
+@mixin innerShadow($shadowColor) {
+    box-shadow: inset 1px 1px 1px 1px $shadowColor;
+    -webkit-box-shadow: inset 1px 1px 1px 1px $shadowColor;
+    -moz-box-shadow: inset 1px 1px 1px 1px $shadowColor;
+    -o-box-shadow: inset 1px 1px 1px 1px $shadowColor;
+}
+
+
+input {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    width: 100%;
+    margin-top: 0.8rem;
+    min-height: 2rem;
+    background-color: darken($color__background, 4%);
+    border: 1px solid darken($color__background, 6%);
+    color: $color__link;
+    text-decoration:none;
+
+    @include innerShadow(rgba(0,0,0,.1));
+
+    &:focus {
+        background-color: darken($color__background, 5%);
+        @include innerShadow(rgba(0,0,0,.3));
+        outline-width: 0;
+        outline: none;
+    }
+
+    @include border-radius(0.2rem);
+}
+
+button {
+    padding: 0.9rem 0.6rem;
+    margin-top: 0.8rem;
+    min-height: 2rem;
+    background-color:$color__link;
+    border: 1px solid $color__link;
+    color: $color__background;
+    text-decoration:none;
+    font-size: 1rem;
+    font-weight: bold;
+
+    @include border-radius(0.3rem);
+
+    &:hover {
+        opacity: $opacity__link--hover;
+    }
+
+    &:active {
+        opacity: $opacity__link--active;
+    }
+}
