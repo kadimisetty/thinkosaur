@@ -1,0 +1,3 @@
+.videoPlayer {
+    @include fadeInUp($duration: 1s, $delay: 0s);
+}

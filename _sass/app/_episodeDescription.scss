@@ -1,2 +1,7 @@
 .episodeDescription {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    @include fadeInUp($duration: 1s, $delay: 0s);
 }
