@@ -1,5 +1,12 @@
 <section class="billboard pb">
-  {% include assetImage.html filename="masthead.svg" alt="thinkosaur masthead" %}
+  <div class="pb-desktop-only">
+    {% include assetImage.html filename="masthead.svg" alt="thinkosaur masthead" %}
+  </div>
+
+  <div class="pb-mobile-only">
+    {% include assetImage.html filename="mastheadMobile.svg" alt="thinkosaur masthead" %}
+  </div>
+
   <h2>up your programming game <br />
     watching these short shows</h2>
 </section>

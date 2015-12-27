@@ -1,11 +1,10 @@
 .showTitleWithDescription {
     margin-top: 6rem;
     margin-bottom: 1rem;
-    text-align: center;
-    max-width: 50%;
 
-    @include fadeInDown($duration: 0.4s, $delay: 0s);
+    text-align: center;
 
     h2 { margin-top: 0.2rem; }
 
+    @include fadeInDown($duration: 0.4s, $delay: 0s);
 }

@@ -1,20 +1,17 @@
 .billboard {
     margin-top: 8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
 
-    @include fadeInDown($duration: 0.4s, $delay: 0s);
-
-    h2 { margin-top: 1rem; }
+    h2 { margin-top: 0.4rem; }
 
     &:after {
         margin: 0 auto;
         padding-top: 0;
-        // margin-top:c -;
         font-size: 2rem;
         content: "▾"; // downward facing arrow UTF-8
         opacity: 0.5;
     }
 
-    @include mobile { display: none; }
+    @include fadeInDown($duration: 0.4s, $delay: 0s);
 }

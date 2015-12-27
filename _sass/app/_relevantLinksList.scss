@@ -3,8 +3,8 @@
     margin-bottom: 6rem;
 
     li {
-            min-height: 6rem;
             position: relative;
+            min-height: 6rem;
 
             border-top: 1px solid darken($color__background, 4%);
             border-left: 1px solid darken($color__background, 4%);
@@ -17,14 +17,15 @@
 
 
         a {
-            font-size: 1.5rem;
             display: block;
-            width: 100%;
             position: absolute;
+            width: 100%;
             top: 50%;
             left: 50%;
+
             transform: translate(-50%, -50%);
 
+            font-size: 1.5rem;
             text-align: center;
             font-weight: normal;
         }

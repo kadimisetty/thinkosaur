@@ -1,7 +1,9 @@
 .divider {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
 
+    text-align: center;
     opacity: 0.3;
+
+    @include mobile {display: none;}
 }

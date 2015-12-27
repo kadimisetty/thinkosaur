@@ -4,5 +4,7 @@
 
     form {
         margin-bottom: 2rem;
-    }
+        width: 260px; }
+
+    img { @include mobile {display: none;} }
 }

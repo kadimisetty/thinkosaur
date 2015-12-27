@@ -5,18 +5,14 @@
     @include fadeInUp($duration: 1s, $delay: 0s);
 
     li {
-            min-height: 6rem;
-            position: relative;
+        min-height: 6rem;
+        position: relative;
 
-            border-top: 1px solid darken($color__background, 4%);
-            border-left: 1px solid darken($color__background, 4%);
-            border-right: 1px solid darken($color__background, 4%);
+        border-top: 1px solid darken($color__background, 4%);
+        border-left: 1px solid darken($color__background, 4%);
+        border-right: 1px solid darken($color__background, 4%);
 
-            &:last-child { 
-                border-bottom: 1px solid darken($color__background, 4%); 
-            }
-
-
+        &:last-child { border-bottom: 1px solid darken($color__background, 4%); }
 
         a {
             display: block;
@@ -28,8 +24,7 @@
 
             text-align: center;
             font-weight: normal;
-            font-size: 2.2rem;
-        }
+            font-size: 2.2rem; }
 
         a:hover {
             font-size: 1.8rem;
@@ -38,15 +33,13 @@
             transition: font-size 0.1s ease-out; 
 
             &:after {
-                margin-top: 0.5rem;
                 display: block;
+                margin-top: 0.5rem;
                 content: attr(data-desc);
+                color: $color__link;
                 font-size: 1rem;
                 line-height: 1rem;
                 font-weight: bold;
-                color: $color__link;
+                
                 @include fadeInUp($duration: 0.2s, $delay: 0s);
-            }
-        }
-    }
-}
+            } } } }
