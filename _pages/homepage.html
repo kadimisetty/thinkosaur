@@ -1,0 +1,28 @@
+---
+permalink: /
+layout: default
+---
+
+
+{% comment %} 
+<!-- TODO: Prepare Shows List -->
+  {% assign shows = "" | split: "|" %}
+  {% for show_hash in site.data.shows %}
+    {% assign shows = shows | push:show_hash[1] %}
+  {% endfor %}
+{% endcomment %}
+
+
+{% comment %} 
+<!-- Prepare authorNote -->
+  {% assign firstBlock=site.data.copy.homepage.authorNote.firstBlock %}
+  {% assign secondBlock=site.data.copy.homepage.authorNote.secondBlock %}
+  {% assign signOff=site.data.copy.homepage.authorNote.signOff %}
+{% endcomment %}
+
+
+{% include billboard.html %}
+{% include showsList.html %}
+{% include divider.html %}
+{% include features.html %}
+{% include authorNote.html firstBlock=firstBlock secondBlock=secondBlock signOff=signOff %}
