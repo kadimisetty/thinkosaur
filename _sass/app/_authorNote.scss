@@ -1,16 +1,17 @@
 .authorNote {
+    form {
+        margin-bottom: 2rem;
+        width: 75%; 
+    }
+
     @include desktop {
         margin-top: 6rem;
         margin-bottom: 4rem;
     }
 
     @include mobile {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        // margin-top: 2rem;
+        // margin-bottom: 2rem;
     }
 
-    form {
-        margin-bottom: 2rem;
-        width: 260px; 
-    }
 }
