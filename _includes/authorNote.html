@@ -5,10 +5,10 @@
 </div>
 
 <div class="message pb-half">
-  <p>{{ include.firstBlock }}</p>
+  {{ include.firstBlock | markdownify }}
   {% include mailchimpForm.html %}
-  <p>{{ include.secondBlock }}</p>
-  <p>{{ include.signOff }}</p>
+  {{ include.secondBlock | markdownify }}
+  {{ include.signOff | markdownify }}
 </div>
 
 </section>
