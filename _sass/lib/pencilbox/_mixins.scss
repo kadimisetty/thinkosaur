@@ -7,7 +7,11 @@
         clear: both; 
         content:""; } }
 
-// - Mobile Breakpoint Helper
+// - Breakpoint Helpers
+@mixin desktop {
+    @media (min-width: #{$pb-grid-max-width}) {
+        @content; } }
+
 @mixin mobile {
     @media (max-width: #{$pb-grid-max-width - 1px}) {
         @content; } }

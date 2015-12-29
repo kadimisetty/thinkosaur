@@ -1,7 +1,15 @@
 .showTitle {
-    margin-top: 6rem;
-    margin-bottom: 1rem;
     text-align: center;
 
-    @include fadeInDown($duration: 0.4s, $delay: 0s);
+    @include desktop {
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
+    }
+
+    @include mobile {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }

@@ -1,26 +1,44 @@
 .episodeTitle {
-    margin-top: 2rem;
-    margin-bottom: 0rem;
-
-    position: relative;
-    min-height: 6rem;
-
-    border: 1px solid darken($color__background, 4%);
 
     @include fadeInUp($duration: 1s, $delay: 0s);
 
-    a {
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    @include desktop {
+        position: relative;
+        min-height: 6rem;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
 
-        text-align: center;
-        font-weight: normal;
-        font-size: 2rem;
+        border: 1px solid darken($color__background, 4%);
+
+        a {
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+            font-weight: normal;
+            font-size: 2rem;
+        }
     }
+
+    @include mobile {
+        a {
+            display: block;
+            margin-bottom: 2rem;
+            margin-bottom: 2rem;
+
+            text-align: center;
+            font-weight: normal;
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+
+    }
+
+
 
 
 }

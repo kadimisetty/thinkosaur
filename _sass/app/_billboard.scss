@@ -13,5 +13,12 @@
         opacity: 0.5;
     }
 
-    @include fadeInDown($duration: 0.4s, $delay: 0s);
+    @include desktop {
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
+    }
+
+    @include mobile {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }

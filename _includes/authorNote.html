@@ -1,26 +1,14 @@
 <section class="authorNote pb">
 
-<div class="profilePhoto pb-half">
+<div class="profilePhoto pb-half pb-desktop-only">
     {% include assetImage.html filename="profilePhoto.png" alt="profile photo" %}
 </div>
 
 <div class="message pb-half">
-
-  <p> Thanks for watching. The depth and variety
-  of thinkosaur shows keeps getting better. You
-  should leave your email so I can send you
-  occasional updates.</p>
-
-
-
+  <p>{{ include.firstBlock }}</p>
   {% include mailchimpForm.html %}
-
-
-  <p>Also hey, great job working on your skillset.
-  Keep on learning!
-
-  <p>— Sri Kadimisetty</p>
-
+  <p>{{ include.secondBlock }}</p>
+  <p>{{ include.signOff }}</p>
 </div>
 
 </section>
