@@ -1,8 +1,9 @@
 .relevantLinksList {
-    margin-top: 0rem;
-    margin-bottom: 6rem;
+    @include desktop {
+        margin-top: 0rem;
+        margin-bottom: 6rem;
 
-    li {
+        li {
             position: relative;
             min-height: 6rem;
 
@@ -16,19 +17,35 @@
 
 
 
+            a {
+                display: block;
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                left: 50%;
+
+                transform: translate(-50%, -50%);
+
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: normal;
+            }
+        }
+
+    }
+
+    @include mobile {
+        margin-top: 0rem;
+        margin-bottom: 4rem;
+
         a {
             display: block;
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            left: 50%;
-
-            transform: translate(-50%, -50%);
+            margin-bottom: 1.5rem;
 
             font-size: 1.5rem;
             text-align: center;
             font-weight: normal;
         }
     }
-
 }
+

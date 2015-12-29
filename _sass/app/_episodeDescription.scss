@@ -1,8 +1,17 @@
 .episodeDescription {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
 
     text-align: center;
 
-    @include fadeInUp($duration: 1s, $delay: 0s);
+
+    @include desktop {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+
+        @include fadeInUp($duration: 1s, $delay: 0s);
+    }
+
+    @include mobile {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 }

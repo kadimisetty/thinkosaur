@@ -1,45 +1,81 @@
 .episodesList {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
 
-    @include fadeInUp($duration: 1s, $delay: 0s);
+    @include fadeInUp($duration: 1s, $delay: 0s); 
 
-    li {
-        min-height: 6rem;
-        position: relative;
+    @include desktop {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
 
-        border-top: 1px solid darken($color__background, 4%);
-        border-left: 1px solid darken($color__background, 4%);
-        border-right: 1px solid darken($color__background, 4%);
-
-        &:last-child { border-bottom: 1px solid darken($color__background, 4%); }
-
-        a {
-            display: block;
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
+        li {
+            min-height: 6rem;
+            position: relative;
             text-align: center;
-            font-weight: normal;
-            font-size: 2.2rem; }
 
-        a:hover {
-            font-size: 1.8rem;
+            border-top: 1px solid darken($color__background, 4%);
+            border-left: 1px solid darken($color__background, 4%);
+            border-right: 1px solid darken($color__background, 4%);
 
-            // Hover ON
-            transition: font-size 0.1s ease-out; 
+            &:last-child { border-bottom: 1px solid darken($color__background, 4%); }
 
-            &:after {
+            a {
                 display: block;
-                margin-top: 0.5rem;
-                content: attr(data-desc);
-                color: $color__link;
-                font-size: 1rem;
-                line-height: 1rem;
-                font-weight: bold;
-                
-                @include fadeInUp($duration: 0.2s, $delay: 0s);
-            } } } }
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                font-weight: normal;
+                font-size: 2.2rem; 
+        }
+
+            a:hover {
+                font-size: 1.8rem;
+
+                // Hover ON
+                transition: font-size 0.1s ease-out; 
+
+                &:after {
+                    display: block;
+                    margin-top: 0.5rem;
+                    content: attr(data-desc);
+                    color: $color__link;
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    font-weight: bold;
+
+                    @include fadeInUp($duration: 0.2s, $delay: 0s);
+            } } 
+        } 
+
+
+    }
+
+    @include mobile {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        li {
+            a {
+                display: block;
+                margin-bottom: 1rem;
+
+                text-align: center;
+                font-weight: normal;
+                font-size: 2.2rem; 
+
+                &:after {
+                    display: block;
+                    margin-top: 0.5rem;
+                    content: attr(data-desc);
+                    color: $color__text;
+
+
+                    font-size: 1rem;
+                    line-height: 1rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
