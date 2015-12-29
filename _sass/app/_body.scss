@@ -40,8 +40,4 @@ body {
             transition: opacity 0.1s linear; } 
 
         &:active { 
-            opacity: $opacity__link--active; 
-
-            // Bring down a little relatively
-            top: 2px;
-            transition: top 0.1s linear; } } }
+            opacity: $opacity__link--active; } } }
