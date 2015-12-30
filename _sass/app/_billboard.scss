@@ -3,14 +3,12 @@
     margin-bottom: 2rem;
     text-align: center;
 
-    h2 { margin-top: 0.4rem; }
-
-    &:after {
-        margin: 0 auto;
-        padding-top: 0;
-        font-size: 2rem;
-        content: "▾"; // downward facing arrow UTF-8
-        opacity: 0.5;
+    h2 { 
+        padding-bottom: 2rem;
+        margin-top: 0.2rem; 
+        background-image: url("/assets/img/downwardArrowhead.svg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
     }
 
     @include desktop {
