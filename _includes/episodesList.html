@@ -1,19 +1,9 @@
 <section class="episodesList pb">
 <ul>
-  <li>
-    <a href="1/views"
-       data-desc="No better time to be an app developer than right now">
-      Third episode eva</a>
-  </li>
-  <li>
-    <a href="1/views"
-       data-desc="whatever">
-       First episode eva</a>
-  </li>
-  <li>
-    <a href="1/views"
-       data-desc="some more info">
-      Starting episode eva tht is kinda long i suppose</a>
-  </li>
+  {% for episode in include.show.docs %}
+    <li> <a href="{{ episode.url }}"
+         data-desc="{{ episode.content }}">
+        {{ episode.title }}</a> </li>
+  {% endfor %}
 </ul>
 </section>

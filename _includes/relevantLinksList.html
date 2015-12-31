@@ -1,9 +1,7 @@
 <section class="relevantLinksList pb">
-<ul>
-  <li><a href="#">Section 21.4</a></li>
-  <li><a href="#">sessin-options</a></li>
-  <li><a href="#">Go away and Come back</a></li>
-  <li><a href="#">Vim Obsessin</a></li>
-  <li><a href="#">ProSession</a></li>
-</ul>
+  <ul>
+    {% for link in include.links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
 </section>

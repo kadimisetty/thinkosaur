@@ -3,4 +3,6 @@ collections:
     output: true
   vimwatch:
     permalink: /vimwatch/:path/
+    slug: vimwatch
+    description: Learn about the editor extraordinaire
     output: true

@@ -1,46 +1,11 @@
-<section class="pb showsList">
-  <ul>
-    <li>
-      <a href="/vimwatch" 
-         data-desc="all about bots">
-        Automaton
-      </a>
+<section class="showsList pb">
+<ul>
+  {% for show in include.shows %}
+    <li><a href="/{{ show.slug }}"
+           data-description="{{ show.description }}">
+        {{ show.label }}</a>
+           </a>
     </li>
-    <li>
-      <a href="/vimwatch" 
-         data-desc="Level up your Mac skills with these nerdy pointers">
-        Mac Squared
-      </a>
-    </li>
-
-
-    {% comment %}
-    <li>
-      <a href="#" 
-         data-desc="Web design — tricks, bugs, quirks and delights!">
-        FAN CSS TIC
-      </a>
-    </li>
-    <li>
-      <a href="#" 
-         data-desc="Sifting through the riches and treasures of UNIX ">
-        Hash Bang
-      </a>
-    </li>
-    <li>
-      <a href="prototypical" 
-         data-desc="all about bots">
-        Prototypical
-      </a>
-    </li>
-    <li>
-      <a href="#" 
-         data-desc="No better time to be an app developer than right now">
-        NS Cupcake
-      </a>
-    </li>
-
-    {% endcomment %}
-  </ul>
-
+  {% endfor %}
+</ul>
 </section>

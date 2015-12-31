@@ -1,4 +1,9 @@
 <section class="showTitleWithDescription pb">
-  <a href="#">{% include assetImage.html filename="prototypicalMasthead.svg" alt="prototypical masthead" %}</a>
-  <h2>Unix — Ins outs and everything in between</h2>
+  <a href="/{{ include.show.slug }}">
+    {% comment %}Grab masthead logo by concatenatig image name with show label{% endcomment %}
+    {% capture mastheadImageFileName %}{{ include.show.label }}Masthead.svg{% endcapture %}
+    {% include assetImage.html filename=mastheadImageFileName alt="prototypical masthead" %}
+  </a>
+
+  <h2>{{ include.show.description }}</h2>
 </section>

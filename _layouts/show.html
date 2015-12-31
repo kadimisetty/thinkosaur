@@ -2,7 +2,18 @@
 layout: default
 ---
 
+{% comment %}
+Retrieve show from collections using showlabel
+{% endcomment %}
+{% assign showLabel = page.showLabel %}
+{% assign showsWithHashes = site.collections %}
+{% for showHash in showsWithHashes %}
+  {% if showHash[1].label == showLabel %}
+    {% assign show = showHash[1] %}
+  {% endif %}
+{% endfor %}
 
-{% include showTitleWithDescription.html %}
-{% include episodesList.html %}
+
+{% include showTitleWithDescription.html show=show%}
+{% include episodesList.html show=show%}
 {% include thinkosaurPoster.html %}

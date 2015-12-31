@@ -1,3 +1,7 @@
 <section class="showTitle pb">
-  <a href="/vimwatch">{% include assetImage.html filename="vimwatchMasthead.svg" alt="prototypical masthead" %}</a>
+  <a href="/{{ include.show.slug }}">
+    {% comment %}Grab masthead logo by concatenatig image name with show label{% endcomment %}
+    {% capture mastheadImageFileName %}{{ include.show.label }}Masthead.svg{% endcapture %}
+    {% include assetImage.html filename=mastheadImageFileName alt="prototypical masthead" %}
+  </a>
 </section>
