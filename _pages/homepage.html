@@ -3,7 +3,6 @@ permalink: /
 layout: default
 ---
 
-
 {% comment %} 
 <!-- TODO: Prepare Shows List -->
   {% assign shows = "" | split: "|" %}
@@ -13,14 +12,8 @@ layout: default
 {% endcomment %}
 
 
-{% comment %} Prepare authorNote {% endcomment %}
-{% assign firstBlock=site.data.copy.homepage.authorNote.firstBlock %}
-{% assign secondBlock=site.data.copy.homepage.authorNote.secondBlock %}
-{% assign signOff=site.data.copy.homepage.authorNote.signOff %}
-
-
 {% include billboard.html %}
 {% include showsList.html %}
 {% include divider.html %}
 {% include features.html %}
-{% include authorNote.html firstBlock=firstBlock secondBlock=secondBlock signOff=signOff %}
+{% include authorNote.html message=site.data.copy.homepage.authorNote.message %}
