@@ -2,7 +2,14 @@ collections:
   pages:
     output: true
   vimwatch:
-    permalink: /vimwatch/:path/
     slug: vimwatch
+    permalink: /vimwatch/:path/
+    name: vim.watch
     description: Learn about the editor extraordinaire
+    output: true
+  hashbang:
+    slug: hashbang
+    permalink: /hashbang/:path/
+    name: Hash Bang
+    description: Unix — Ins, outs and everything in between
     output: true
