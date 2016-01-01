@@ -13,3 +13,9 @@ collections:
     name: Hash Bang
     description: Unix — Ins, outs and everything in between
     output: true
+  macsquared:
+    slug: macsquared
+    permalink: /macsquared/:path/
+    name: Mac Squared
+    description: Get intimate with the Mac
+    output: true
