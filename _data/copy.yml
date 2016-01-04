@@ -5,6 +5,14 @@ homepage:
     secondLine:
       watching these short shows
 
-  authorNote:
+  newsletter:
     message:
       There's fresh episodes added regularly. You should leave your email here so I can keep you posted once a month.
+
+  features:
+    diverse:
+      Learn a wide variety of interesting things
+    digestible:
+      Perfect sized episodes that fit your break time 
+    loaded:
+      Podcasts, Cheatsheets, Guides, Interviews
