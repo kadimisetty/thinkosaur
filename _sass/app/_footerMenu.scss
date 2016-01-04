@@ -1,0 +1,30 @@
+.footerMenu {
+    @include desktop {
+        ul {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            list-style:none;
+            text-align:center;
+
+            li {
+                display: inline;
+                margin-right: 1rem;
+                text-transform: uppercase;
+
+                // Everything Except Last Child 
+                // http://stackoverflow.com/a/23105340/225903
+                &:nth-last-child(n+2) { 
+                    &:after {
+                        margin-left: 1rem;
+                        content: "\25CF";
+                        color: $color__text;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include mobile { display: none; }
+
+}
