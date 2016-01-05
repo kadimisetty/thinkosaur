@@ -9,16 +9,19 @@ collections:
     permalink: /vimwatch/:path/
     name: vim.watch
     description: Learn about the editor extraordinaire
+    hostID: sri
     output: true
   hashbang:
     slug: hashbang
     permalink: /hashbang/:path/
     name: Hash Bang
     description: Unix — Ins, outs and everything in between
+    hostID: sri
     output: true
   macsquared:
     slug: macsquared
     permalink: /macsquared/:path/
     name: Mac Squared
     description: Get intimate with the Mac
+    hostID: sri
     output: true
