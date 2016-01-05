@@ -17,3 +17,4 @@ relevantLinks:
   - title: ProSession
     url: https://github.com/dhruvasagar/vim-prosession
 ---
+Save the entire workspace with Sessions

@@ -15,3 +15,4 @@ relevantLinks:
   - title: restore_views.vim
     url: http://www.vim.org/scripts/script.php?script_id=4021
 ---
+Persist a window's settings with views

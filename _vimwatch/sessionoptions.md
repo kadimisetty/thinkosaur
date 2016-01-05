@@ -11,3 +11,4 @@ relevantLinks:
   - title: sessionoptions
     url: http://vimdoc.sourceforge.net/htmldoc/options.html#'sessionoptions'
 ---
+Choose what gets saved in a session with session options

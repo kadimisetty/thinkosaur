@@ -11,3 +11,4 @@ relevantLinks:
   - title: Remembering Information
     url: http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.3
 ---
+Persist remaining workspace settings with viminfo
