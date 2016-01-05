@@ -12,15 +12,22 @@ layout: default
   {% endif %}
 {% endfor %}
 
-{% comment %} PREPARE COPY FOR NEWSLETTER {% endcomment %}
+{% comment %}PREPARE COPY FOR NEWSLETTER {% endcomment %}
 {% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}
 
+{% comment %}PREPARE EPISODE INFO{% endcomment %}
+{% assign episodeTitle=page.title %}
+{% assign episodeURL=page.url %}
+{% assign episodeDescription=page.content %}
+{% assign episodeDuration=page.duration %}
+{% assign episodeFeatured=page.featured %}
+{% assign episodeVimeoID=page.vimeoID %}
+
 {% include showTitle.html show=show %}
-{% comment %}{% include newerEpisode.html %}{% endcomment %}
-{% include episodeTitle.html title=page.title url=page.url description=page.content%}
-{% comment %}{% include earlierEpisode.html %}{% endcomment %}
-{% include videoPlayer.html vimeoID=page.vimeoID%}
-{% include episodeDescription.html description=page.content %}
+{% include episodeTitle.html title=episodeTitle url=episodeURL description=episodeDescription %}
+{% include videoPlayer.html vimeoID=episodeVimeoID %}
+{% include episodeDescription.html description=episodeDescription duration=episodeDuration featured=episodeFeatured %}
+
 {% if page.relevantLinks %}
   {% include relevantLinksList.html links=page.relevantLinks%}
 {% endif %}

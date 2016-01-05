@@ -3,8 +3,9 @@ title: viminfo
 index: 4
 layout: episode
 vimeoID: 125022196
+duration: 7
 featured:
-  - vim
+  - Vim 7.4
 relevantLinks:
   - title: The viminfo file
     url: http://vimdoc.sourceforge.net/htmldoc/starting.html#viminfo

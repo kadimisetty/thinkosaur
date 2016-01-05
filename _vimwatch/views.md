@@ -3,8 +3,9 @@ title: Views
 index: 1
 layout: episode
 vimeoID: 120830517
+duration: 5
 featured:
-  - vim
+  - Vim 7.4
 relevantLinks:
   - title: Section 21.5
     url: http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.5

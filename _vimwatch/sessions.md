@@ -3,8 +3,9 @@ title: Sessions
 index: 2
 layout: episode
 vimeoID: 121657990
+duration: 5
 featured:
-  - vim
+  - Vim 7.4
 relevantLinks:
   - title: Section 21.4
     url: http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.4
