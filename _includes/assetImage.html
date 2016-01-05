@@ -1,1 +1,6 @@
-<img src="/assets/img/{{ include.filename }}" alt="{{ include.alt }}"/>
+{% if include.filenameRetina %}
+  {% comment %}Using Retina JS Name Scheming{% endcomment %}
+  <img src="/assets/img/{{ include.filename }}" data-at2x="/assets/img/{{ include.filenameRetina }}" alt="{{ include.alt }}"/>
+{% else %}
+  <img src="/assets/img/{{ include.filename }}" alt="{{ include.alt }}"/>
+{% endif %}
