@@ -1,6 +1,10 @@
 <section class="episodesList pb">
 <ul>
-  {% for episode in include.show.docs %}
+
+  {% assign episodes = include.show.docs %}
+  {% assign sortedEpisodes = episodes | sort:"index" %}
+  {% assign reversedSortedEpisodes = sortedEpisodes | reverse %}
+  {% for episode in reversedSortedEpisodes %}
     <li> <a href="{{ episode.url }}"
          data-desc="{{ episode.content }}">
         {{ episode.title }}</a> </li>
