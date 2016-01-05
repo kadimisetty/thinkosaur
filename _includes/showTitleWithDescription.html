@@ -1,8 +1,10 @@
 <section class="showTitleWithDescription pb">
   <a href="/{{ include.show.slug }}">
-    {% comment %}Grab masthead logo by concatenatig image name with show label{% endcomment %}
-    {% capture mastheadImageFileName %}{{ include.show.label }}Masthead.svg{% endcapture %}
-    {% include assetImage.html filename=mastheadImageFileName alt="prototypical masthead" %}
+    {% comment %}PREPARE THE SHOW'S MASTHEAD'S POSTERS{% endcomment %}
+    {% capture mastheadFilename %}{{ include.show.label }}Masthead.png{% endcapture %}
+    {% capture mastheadFilenameRetina %}{{ include.show.label }}Masthead@2x.png{% endcapture %}
+    {% capture altLabel %}{{ show.name }}{% endcapture %}
+    {% include assetImage.html filename=mastheadFilename  filenameRetina=mastheadFilenameRetina  alt=altLabel %}
   </a>
 
   <h2>{{ include.show.description }}</h2>
