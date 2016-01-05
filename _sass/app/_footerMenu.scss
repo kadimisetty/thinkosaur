@@ -1,12 +1,13 @@
 .footerMenu {
-    ul {
-        list-style:none;
-        text-align:center;
-    }
 
     @include desktop {
         margin-top: 4rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
+
+        ul {
+            list-style:none;
+            text-align:center;
+        }
 
         li {
             display: inline;
@@ -23,6 +24,12 @@
                 }
             }
         }
+    }
+
+    h2 {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
     }
 
 }
