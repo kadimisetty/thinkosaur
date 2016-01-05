@@ -1,0 +1,25 @@
+.showNewsletterBar {
+    background-color: $color__accent--background;
+
+    @include desktop {
+        margin-bottom: 2rem;
+        padding-top:2rem;
+        padding-bottom: 2rem;
+
+        .newsletterSignup {
+            p {padding-bottom: 0;
+            margin-bottom: 1rem;}
+
+            form { max-width: 80%; }
+        }
+
+        .thinkosaurShow {
+            margin-top: 4.6rem;
+            text-align: right;
+            img {
+                margin-right: 0.6rem;
+            }
+        }
+    }
+    @include mobile {display: none;}
+}

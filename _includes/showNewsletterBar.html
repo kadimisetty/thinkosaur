@@ -1,0 +1,12 @@
+<section class="showNewsletterBar pb">
+  <div class="thinkosaurShow pb-half">
+    <a href="/">
+      {% include assetImage.html filename="thinkosaurShow.png" retinaFilename="thinkosaurShow@2x.png" alt="A Thinkosaur Show" %}
+    </a>
+  </div>
+
+  <div class="pb-half newsletterSignup">
+    {{ include.message | markdownify }}
+    {% include mailchimpForm.html %}
+  </div>
+</section>
