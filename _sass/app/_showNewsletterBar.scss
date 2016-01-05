@@ -1,14 +1,19 @@
 .showNewsletterBar {
-    background-color: $color__accent--background;
-
     @include desktop {
+
+        background-color: $color__accent--background;
+        border-radius: 0.4rem;
+
         margin-bottom: 2rem;
         padding-top:2rem;
         padding-bottom: 2rem;
 
         .newsletterSignup {
-            p {padding-bottom: 0;
-            margin-bottom: 1rem;}
+            p {
+                padding-bottom: 0;
+                margin-bottom: 1rem;
+                padding-right: 1rem;
+            }
 
             form { max-width: 80%; }
         }
@@ -21,5 +26,6 @@
             }
         }
     }
+
     @include mobile {display: none;}
 }
