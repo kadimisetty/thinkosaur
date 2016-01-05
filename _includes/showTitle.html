@@ -1,3 +1,9 @@
 <section class="showTitle pb">
-  <a href="/prototypical/">{% include assetImage.html filename="prototypicalMasthead.svg" alt="prototypical masthead" %}</a>
+  <a href="/{{ include.show.slug }}">
+    {% comment %}PREPARE THE SHOW'S MASTHEAD'S POSTERS{% endcomment %}
+    {% capture mastheadFilename %}{{ include.show.label }}Masthead.png{% endcapture %}
+    {% capture mastheadFilenameRetina %}{{ include.show.label }}Masthead@2x.png{% endcapture %}
+    {% capture altLabel %}{{ show.name }}{% endcapture %}
+    {% include assetImage.html filename=mastheadFilename  filenameRetina=mastheadFilenameRetina  alt=altLabel %}
+  </a>
 </section>

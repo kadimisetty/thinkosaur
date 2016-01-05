@@ -1,14 +1,12 @@
 <section class="authorNote pb">
 
 <div class="profilePhoto pb-half pb-desktop-only">
-    {% include assetImage.html filename="profilePhoto.png" alt="profile photo" %}
+    <!-- {% include assetImage.html filename="profilePhoto.png" alt="profile photo" %} -->
 </div>
 
 <div class="message pb-half">
-  <p>{{ include.firstBlock }}</p>
+  {{ include.message | markdownify }}
   {% include mailchimpForm.html %}
-  <p>{{ include.secondBlock }}</p>
-  <p>{{ include.signOff }}</p>
 </div>
 
 </section>

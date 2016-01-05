@@ -1,12 +1,14 @@
 .authorNote {
     form {
         margin-bottom: 2rem;
-        width: 75%; 
+        width: 80%; 
     }
 
     @include desktop {
-        margin-top: 6rem;
+        margin-top: 4rem;
         margin-bottom: 4rem;
+
+        .profilePhoto img{ border-radius: 2%; }
     }
 
     @include mobile {

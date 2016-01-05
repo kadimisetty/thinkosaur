@@ -1,16 +1,29 @@
 ---
 layout: default
 ---
+{% comment %} PREPARE SHOW AND EPISODE
+ Use page information to retrieve containing show/collection
+{% endcomment %}
+{% assign showLabel = page.collection %}
+{% assign showsWithHashes = site.collections %}
+{% for showHash in showsWithHashes %}
+  {% if showHash[1].label == showLabel %}
+    {% assign show = showHash[1] %}
+  {% endif %}
+{% endfor %}
 
-{% include showTitle.html %}
+{% comment %} PREPARE COPY FOR NEWSLETTER {% endcomment %}
+{% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}
+
+{% include showTitle.html show=show %}
 {% comment %}{% include newerEpisode.html %}{% endcomment %}
-{% include episodeTitle.html %}
+{% include episodeTitle.html title=page.title url=page.url description=page.content%}
 {% comment %}{% include earlierEpisode.html %}{% endcomment %}
-
-{% include videoPlayer.html vimeoID="125022196"%}
-
-{% include episodeDescription.html %}
-{% include relevantLinksList.html %}
-
-{% include thinkosaurPoster.html %}
+{% include videoPlayer.html vimeoID=page.vimeoID%}
+{% include episodeDescription.html description=page.content %}
+{% if page.relevantLinks %}
+  {% include relevantLinksList.html links=page.relevantLinks%}
+{% endif %}
+{% include showNewsletterBar.html message=newsletterMessage %}
+{% include footerMenu.html  %}
 

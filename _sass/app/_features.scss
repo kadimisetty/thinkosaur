@@ -1,27 +1,34 @@
 .features {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    @include desktop {
+        margin-top: 6rem;
+        margin-bottom: 5rem;
 
-    h2  {
-        font-weight: bold;}
+        h2  { font-weight: bold; }
 
-    h3 {
-        line-height: 1.4rem;
-        font-weight: normal; }
+        h3 {
+            line-height: 1.4rem;
+            font-weight: normal; 
+        }
 
-    .feature {
-        margin-bottom: 1rem;
-        display: block;
-        clear: both;
-        min-height: 5rem;
-
-        img {
-            float: left;
+        .feature {
+            margin-bottom: 1rem;
             display: block;
-            margin-right: 1rem;
+            clear: both;
+            min-height: 5rem;
+
+            img {
+                float: left;
+                display: block;
+                margin-right: 1rem;
+            }
+        }
+
+        .newsletterSignup {
+            background-color: $color__accent--background;
+            p { padding: 1rem 1rem 0 0; margin-bottom: 0;}
+            form { width: 80%; margin-bottom: 1rem;}
         }
     }
 
     @include mobile() { display: none;}
-
 }

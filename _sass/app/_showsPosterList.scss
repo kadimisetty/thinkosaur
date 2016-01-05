@@ -1,0 +1,20 @@
+.showsPosterList {
+    @include desktop {
+        @include fadeInUp($duration: 1s, $delay: 0s);
+        ul {
+            list-style-type: none;
+            text-align: center;
+
+            li {
+                height: 13rem;
+            }
+
+            h2 {
+                margin-top: 0.4rem;
+
+            }
+        }
+    }
+
+    @include mobile { display: none; }
+}

@@ -3,24 +3,29 @@ permalink: /homepage
 layout: default
 ---
 
-
-{% comment %} 
-<!-- TODO: Prepare Shows List -->
-  {% assign shows = "" | split: "|" %}
-  {% for show_hash in site.data.shows %}
-    {% assign shows = shows | push:show_hash[1] %}
-  {% endfor %}
+{% comment %} PREPARE LIST OF SHOWS
+1. Get all collections
+2. Make list of collections without hashes
+3. Remove Pages from that list
 {% endcomment %}
+{% assign showsWithHashes = site.collections %}
+{% assign shows = "" | split: "|" %}
+{% for showHash in showsWithHashes %}
+  {% unless showHash[1].label == 'pages' %}
+    {% assign shows = shows | push:showHash[1] %}
+  {% endunless %}
+{% endfor %}
 
 
-{% comment %} Prepare authorNote {% endcomment %}
-{% assign firstBlock=site.data.copy.homepage.authorNote.firstBlock %}
-{% assign secondBlock=site.data.copy.homepage.authorNote.secondBlock %}
-{% assign signOff=site.data.copy.homepage.authorNote.signOff %}
+{% comment %} PREPARE COPY FOR FEATURES {% endcomment %}
+{% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}
+{% assign diverseMessage=site.data.copy.homepage.features.diverse %}
+{% assign digestibleMessage=site.data.copy.homepage.features.digestible %}
+{% assign loadedMessage=site.data.copy.homepage.features.loaded %}
 
 
 {% include billboard.html %}
-{% include showsList.html %}
-{% include divider.html %}
-{% include features.html %}
-{% include authorNote.html firstBlock=firstBlock secondBlock=secondBlock signOff=signOff %}
+{% include showsPosterList.html shows=shows%}
+{% include showsList.html shows=shows%}
+{% include features.html message=newsletterMessage diverseMessage=diverseMessage digestibleMessage=digestibleMessage loadedMessage=loadedMessage %}
+{% include footerMenu.html  %}
