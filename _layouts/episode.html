@@ -1,9 +1,8 @@
 ---
 layout: default
 ---
-{% comment %}
-PREPARE SHOW AND EPISODE
-1. Use page information to retrieve containing show/collection
+{% comment %} PREPARE SHOW AND EPISODE
+ Use page information to retrieve containing show/collection
 {% endcomment %}
 {% assign showLabel = page.collection %}
 {% assign showsWithHashes = site.collections %}
@@ -13,6 +12,8 @@ PREPARE SHOW AND EPISODE
   {% endif %}
 {% endfor %}
 
+{% comment %} PREPARE COPY FOR NEWSLETTER {% endcomment %}
+{% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}
 
 {% include showTitle.html show=show %}
 {% comment %}{% include newerEpisode.html %}{% endcomment %}
@@ -22,6 +23,7 @@ PREPARE SHOW AND EPISODE
 {% include episodeDescription.html description=page.content %}
 {% if page.relevantLinks %}
   {% include relevantLinksList.html links=page.relevantLinks%}
-{% endif }%}
-{% include thinkosaurPoster.html %}
+{% endif %}
+{% include showNewsletterBar.html message=newsletterMessage %}
+{% include footerMenu.html  %}
 
