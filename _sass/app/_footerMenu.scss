@@ -1,31 +1,29 @@
 .footerMenu {
+    ul {
+        list-style:none;
+        text-align:center;
+    }
+
     @include desktop {
         margin-top: 4rem;
         margin-bottom: 2rem;
-        ul {
-            list-style:none;
-            text-align:center;
 
-            li {
-                display: inline;
-                margin-right: 1rem;
-                text-transform: uppercase;
-                font-size: 1.3125rem;
+        li {
+            display: inline;
+            margin-right: 1rem;
+            text-transform: uppercase;
+            font-size: 1.3125rem;
 
-                // Everything Except Last Child 
-                // http://stackoverflow.com/a/23105340/225903
-                &:nth-last-child(n+2) { 
-                    &:after {
-                        margin-left: 1rem;
-                        content: "\25CF";
-                        color: $color__text;
-                    }
+            // Everything Except Last Child 
+            // http://stackoverflow.com/a/23105340/225903
+            &:nth-last-child(n+2) { 
+                &:after {
+                    margin-left: 1rem;
+                    content: "\25CF";
+                    color: $color__text;
                 }
             }
         }
     }
-
-
-    @include mobile { display: none; }
 
 }
