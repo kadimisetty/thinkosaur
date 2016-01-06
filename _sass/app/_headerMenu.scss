@@ -1,11 +1,18 @@
 .headerMenu {
-    margin-top: 1.4rem;
-    text-align: center;
+    @include desktop {
+        margin-top: 1.4rem;
+        text-align: center;
 
-    @include fadeInDown($duration: 0.4s, $delay: 0s);
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
 
-    h2 {
-        padding: 0;
-        margin: 0;
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    @include mobile { 
+        margin-top: 1rem;
+        text-align: center;
     }
 }
