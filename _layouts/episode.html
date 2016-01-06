@@ -23,6 +23,7 @@ layout: default
 {% assign episodeFeatured=page.featured %}
 {% assign episodeVimeoID=page.vimeoID %}
 
+{% include headerMenu.html  %}
 {% include showTitle.html show=show %}
 {% include episodeTitle.html title=episodeTitle url=episodeURL description=episodeDescription %}
 {% include videoPlayer.html vimeoID=episodeVimeoID %}

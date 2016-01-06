@@ -2,7 +2,7 @@
     text-align: center;
 
     @include desktop {
-        margin-top: 6rem;
+        margin-top: 1.2rem;
         margin-bottom: 1rem;
 
         @include fadeInDown($duration: 0.4s, $delay: 0s);
