@@ -17,12 +17,19 @@ layout: default
 {% endfor %}
 
 
-{% comment %} PREPARE COPY FOR FEATURES {% endcomment %}
+{% comment %}PREPARE COPY FOR FEATURES{% endcomment %}
 {% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}
 {% assign diverseMessage=site.data.copy.homepage.features.diverse %}
 {% assign digestibleMessage=site.data.copy.homepage.features.digestible %}
 {% assign loadedMessage=site.data.copy.homepage.features.loaded %}
 
+
+{% comment %}PREPARE COPY FOR TERSTIMONIAL{% endcomment %}
+{% assign testimonialMessage = site.data.copy.homepage.testimonial.message %}
+{% assign testimonialName = site.data.copy.homepage.testimonial.name %}
+{% assign testimonialTitle = site.data.copy.homepage.testimonial.title %}
+{% assign testimonialPhotoFilenameSlug = site.data.copy.homepage.testimonial.photoFileNameSlug %}
+{% comment %}{% include testimonials.html message=testimonialMessage name=testimonialName title=testimonialTitle photoFilenameSlug=testimonialPhotoFilenameSlug %}{% endcomment %}
 
 {% include billboard.html %}
 {% include showsPosterList.html shows=shows%}
