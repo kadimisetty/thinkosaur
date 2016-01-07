@@ -14,8 +14,10 @@
 
             border-radius: 0.2rem;
 
-            background-color: $color__text;
-            color: $color__background;
+            // background-color: $color__text;
+            // color: $color__background;
+
+            border: 1px solid $color__text;
 
             text-transform: uppercase;
             font-size: 0.8rem;
