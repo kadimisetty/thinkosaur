@@ -47,3 +47,10 @@ collections:
     description: Build great products by learning to prototype
     hostID: sri
     output: true
+  gitsetgo:
+    slug: gitsetgo
+    permalink: /gitsetgo/:path/
+    name: Git Set Go!
+    description: Learn the one true way to track everything
+    hostID: sri
+    output: true
