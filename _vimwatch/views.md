@@ -3,6 +3,7 @@ title: Views
 index: 1
 layout: episode
 vimeoID: 120830517
+publishDate: 2013-07-04
 duration: 5
 featured:
   - Vim 7.4

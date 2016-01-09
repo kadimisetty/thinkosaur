@@ -3,6 +3,7 @@ title: Sessions
 index: 2
 layout: episode
 vimeoID: 121657990
+publishDate: 2013-07-04
 duration: 5
 featured:
   - Vim 7.4

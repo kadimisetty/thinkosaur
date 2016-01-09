@@ -3,6 +3,7 @@ title: Session Options
 index: 3
 layout: episode
 vimeoID: 122938462
+publishDate: 2013-07-04
 duration: 3
 featured:
   - Vim 7.4

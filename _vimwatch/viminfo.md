@@ -3,6 +3,7 @@ title: viminfo
 index: 4
 layout: episode
 vimeoID: 125022196
+publishDate: 2013-07-04
 duration: 7
 featured:
   - Vim 7.4
