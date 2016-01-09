@@ -1,18 +1,21 @@
 <section class="episodesList pb">
 
   <h2>Season One &middot; Spring 2016</h2>
-  <h3> Bi-weekly episodes by {{ site.data.hosts.sri.name }} </h3>
+  <h3> Bi-weekly Episodes by {{ site.data.hosts.sri.name }} </h3>
 
   <ul>
-    {% comment %}PREPARED ORDERED EPISODES{% endcomment %}
+    {% comment %}PREPARE ORDERED EPISODES{% endcomment %}
     {% assign episodes = include.show.docs %}
     {% assign sortedEpisodes = episodes | sort:"index" %}
     {% assign reversedSortedEpisodes = sortedEpisodes | reverse %}
 
     {% for episode in reversedSortedEpisodes %}
-      <li> <a href="{{ episode.url }}"
-           data-desc="{{ episode.content }}">
-          {{ episode.title }}</a> </li>
+      {% comment %}PREPARE EPISODE{% endcomment %}
+      {% assign url = episode.url %}
+      {% assign content = episode.content %}
+      {% assign title = episode.url %}
+
+      <li> <a href="{{ url }}" data-desc="{{ content }}"> {{ title }}</a> </li>
     {% endfor %}
   </ul>
 
