@@ -13,7 +13,7 @@
       {% comment %}PREPARE EPISODE{% endcomment %}
       {% assign url = episode.url %}
       {% assign content = episode.content %}
-      {% assign title = episode.url %}
+      {% assign title = episode.title %}
 
       <li> <a href="{{ url }}" data-desc="{{ content }}"> {{ title }}</a> </li>
     {% endfor %}
