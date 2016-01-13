@@ -8,7 +8,9 @@
         margin-top: 2rem;
         margin-bottom: 0rem;
 
-        border: 1px solid darken($color__background, 4%);
+        border: 1px solid $color__borderLinkList;
+        border-top-left-radius: 0.4rem;
+        border-top-right-radius: 0.4rem;
 
         a {
             display: block;

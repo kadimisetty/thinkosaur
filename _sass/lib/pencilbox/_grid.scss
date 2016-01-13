@@ -7,12 +7,10 @@
     box-sizing: border-box;
     min-height: 1px;
     max-width: $pb-grid-max-width;
-    @if $pb-grid-force-center == true { 
-        margin: 0 auto } 
+    @if $pb-grid-force-center == true { margin: 0 auto } 
 
     @include clearfix; 
-    @include mobile {
-        width: $pb-grid-mobile-max-width; }
+    @include mobile { width: $pb-grid-mobile-max-width; }
 
     .pb-half-flush {
         float: left;
@@ -20,8 +18,8 @@
         min-height: 1px;
         width: 50%; 
 
-        @include mobile {
-            width: 100%; } }
+        @include mobile { width: 100%; }
+    }
 
     .pb-half {
         float: left;
@@ -32,7 +30,8 @@
 
         @include mobile {
             padding: 0;
-            width: 100%; }
+            width: 100%; 
+        }
 
         &:nth-of-type(even) {
             padding-right: 0%; 
@@ -40,16 +39,29 @@
 
             @include mobile {
                 padding: 0;
-                width: 100%; } } } }
+                width: 100%; 
+            } 
+        } 
+    } 
+}
 
 
-// DESKTOP OR MOBILE ONLY
+// DESKTOP OR MOBILE
 .pb-desktop-only {
-    @include mobile {
-        display: none; } }
+    @include mobile { display: none; }
+}
 
 .pb-mobile-only {
-    display: none;
+    @include desktop { display: none;}
+}
 
-    @include mobile {
-        display: block; } }
+
+
+// RETINA OR NONRETINA
+.pb-retina-only {
+    @include nonRetina { display: none; }
+}
+
+.pb-nonRetina-only {
+    @include retina { display: none; }
+}
