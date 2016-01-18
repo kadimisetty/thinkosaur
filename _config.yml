@@ -23,7 +23,7 @@ collections:
     slug: hashbang
     permalink: /hashbang/:path/
     name: Hash Bang
-    description: Unix — a lotta ins, lotta outs, lotta what-have-you's
+    description: Ins and Outs of Unix
     hostID: sri
     output: true
   macsquared:

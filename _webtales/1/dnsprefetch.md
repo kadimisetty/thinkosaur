@@ -6,7 +6,10 @@ vimeoID: 120830517
 publishDate: 2013-07-04
 duration: 7
 featured:
-  - HTML5, Safari 9.0.2, Chrome 47.0.2, Firefox 43.0.4
+  - HTML5
+  - Safari 9.0.2
+  - Chrome 47.0.2
+  - Firefox 43.0.4
 relevantLinks:
     - title: dns-prefetch browser support
       url: http://caniuse.com/#search=dns-prefetch
