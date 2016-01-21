@@ -18,6 +18,15 @@
             margin-bottom: 1rem;
         }
 
+        h4 {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            text-align: center;
+            a {
+                font-weight: normal;
+            }
+        }
+
         li {
             min-height: 6rem;
             position: relative;
@@ -84,6 +93,8 @@
             font-weight: normal;
             margin-bottom: 1rem;
         }
+
+        h4 { display: none;}
 
 
         li {
