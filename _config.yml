@@ -33,24 +33,24 @@ collections:
     description: Get intimate with your Mac
     hostID: sri
     output: true
-  pycandy:
-    slug: pycandy
-    permalink: /pycandy/:path/
-    name: py candy
-    description: Sweet learning for the modern pythonista
-    hostID: sri
-    output: true
-  paperplanes:
-    slug: paperplanes
-    permalink: /paperplanes/:path/
-    name: Paper Planes
-    description: Build great products by learning to prototype
-    hostID: sri
-    output: true
-  gitsetgo:
-    slug: gitsetgo
-    permalink: /gitsetgo/:path/
-    name: Git Set Go!
-    description: Learn the one true way to track everything
-    hostID: sri
-    output: true
+  # pycandy:
+  #   slug: pycandy
+  #   permalink: /pycandy/:path/
+  #   name: py candy
+  #   description: Sweet learning for the modern pythonista
+  #   hostID: sri
+  #   output: true
+  # paperplanes:
+  #   slug: paperplanes
+  #   permalink: /paperplanes/:path/
+  #   name: Paper Planes
+  #   description: Build great products by learning to prototype
+  #   hostID: sri
+  #   output: true
+  # gitsetgo:
+  #   slug: gitsetgo
+  #   permalink: /gitsetgo/:path/
+  #   name: Git Set Go!
+  #   description: Learn the one true way to track everything
+  #   hostID: sri
+  #   output: true

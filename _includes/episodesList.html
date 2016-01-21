@@ -5,7 +5,8 @@
 
   <ul>
     {% comment %}PREPARE ORDERED EPISODES{% endcomment %}
-    {% assign episodes = include.show.docs %}
+    {% assign show = include.show %}
+    {% assign episodes = show.docs %}
     {% assign sortedEpisodes = episodes | sort:"index" %}
     {% assign reversedSortedEpisodes = sortedEpisodes | reverse %}
 
