@@ -1,5 +1,5 @@
 ---
-title: Prefetching DNS & Handshakes
+title: Prefetching DNS & Connections
 index: 1
 layout: episode
 vimeoID: 120830517
@@ -11,16 +11,27 @@ featured:
   - Chrome 47.0.2
   - Firefox 43.0.4
 relevantLinks:
-    - title: dns-prefetch browser support
-      url: http://caniuse.com/#search=dns-prefetch
-    - title: Eliminating roundtrips with Preconnect
-      url: https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect
-    - title: Controlling DNS Prefetching
-      url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
-    - title: Perceived effects of Delay
-      url: https://www.nngroup.com/articles/response-times-3-important-limits
-    - title: Webpagetest
-      url: http://www.webpagetest.org
+  - title: Percieved User Response times
+    url: https://www.nngroup.com/articles/response-times-3-important-limits/
+  - title: 200ms delays — Chromium DNS Prefetching
+    url: https://www.chromium.org/developers/design-documents/dns-prefetching
+  - title: Turn off dns-prefetch in Safari
+    url: https://software.com/mac/tweaks/toggle-dns-prefetching-in-safari
+  - title: Chrome dns-prefetch
+    url: http://dev.chromium.org/developers/design-documents/dns-prefetching
+  - title: MDN on Prefetching
+    url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
+  - title: Webpagetest
+    url: http://www.webpagetest.org
+  - title: Prebrowsing
+    url: http://www.stevesouders.com/blog/2013/11/07/prebrowsing/
+  - title: Eliminating Roundtrips with Preconnect
+    url: https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/
+  - title: Inspecting DNS Prefetching and resolver performance
+    url: http://www.cambus.net/inspecting-dns-prefetching-and-resolver-performance-within-chrome/
+  - title: caniuse.com dns-prefetch
+    url: http://caniuse.com/#search=dns-prefetch
 ---
 Load pages faster by caching DNS queries and TCP handshakes 
+
 
