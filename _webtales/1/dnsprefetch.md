@@ -15,10 +15,6 @@ relevantLinks:
     url: https://www.nngroup.com/articles/response-times-3-important-limits/
   - title: 200ms delays — Chromium DNS Prefetching
     url: https://www.chromium.org/developers/design-documents/dns-prefetching
-  - title: Turn off dns-prefetch in Safari
-    url: https://software.com/mac/tweaks/toggle-dns-prefetching-in-safari
-  - title: Chrome dns-prefetch
-    url: http://dev.chromium.org/developers/design-documents/dns-prefetching
   - title: MDN on Prefetching
     url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
   - title: Webpagetest
@@ -30,7 +26,9 @@ relevantLinks:
   - title: Inspecting DNS Prefetching and resolver performance
     url: http://www.cambus.net/inspecting-dns-prefetching-and-resolver-performance-within-chrome/
   - title: caniuse.com dns-prefetch
-    url: http://caniuse.com/#search=dns-prefetch
+    url: http://caniuse.com/#feat=link-rel-dns-prefetch
+  - title: caniuse.com preconnect
+    url: http://caniuse.com/#feat=link-rel-preconnect
 ---
 Load pages faster by caching DNS queries and TCP handshakes 
 
