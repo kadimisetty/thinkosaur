@@ -6,6 +6,7 @@
   <ul>
     {% comment %}PREPARE ORDERED EPISODES{% endcomment %}
     {% assign show = include.show %}
+    {% assign slug = show.slug %}
     {% assign episodes = show.docs %}
     {% assign sortedEpisodes = episodes | sort:"index" %}
     {% assign reversedSortedEpisodes = sortedEpisodes | reverse %}
@@ -20,5 +21,5 @@
     {% endfor %}
   </ul>
 
-  <h4> <a href="{{ site.meta.loungeURL }}">Discuss this show in the Lounge</a> </h4>
+  <h4> <a href="{{ site.meta.loungeURL }}/c/{{ slug }}">Discuss this show in the Lounge</a> </h4>
 </section>

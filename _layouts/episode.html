@@ -9,6 +9,7 @@ layout: default
 {% for showHash in showsWithHashes %}
   {% if showHash[1].label == showLabel %}
     {% assign show = showHash[1] %}
+    {% assign showSlug = show.slug %}
   {% endif %}
 {% endfor %}
 
@@ -31,7 +32,7 @@ layout: default
 {% include episodeDescription.html description=episodeDescription duration=episodeDuration publishDate=episodePublishDate featured=episodeFeatured %}
 
 {% if page.relevantLinks %}
-  {% include relevantLinksList.html links=page.relevantLinks%}
+  {% include relevantLinksList.html links=page.relevantLinks showSlug=showSlug %}
 {% endif %}
 {% include showNewsletterBar.html message=newsletterMessage %}
 {% include footerMenu.html  selected="shows" %}
