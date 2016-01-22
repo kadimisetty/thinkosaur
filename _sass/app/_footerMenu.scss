@@ -28,6 +28,10 @@
             font-size: 1rem;
             text-align: center;
 
+            &:hover {
+                background-color: $color__accent--background;
+            }
+
             &:first-child {
                 border-top-left-radius: 0.4rem;
                 border-bottom-left-radius: 0.4rem;
