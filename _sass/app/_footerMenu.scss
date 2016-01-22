@@ -12,27 +12,34 @@
             text-align:center;
         }
 
-        li {
-            display: inline;
-            margin-right: 0.4rem;
-            font-size: 1.3125rem;
 
-            // Everything Except Last Child 
-            // http://stackoverflow.com/a/23105340/225903
-            &:nth-last-child(n+2) { 
-                &:after {
-                    margin-left: 1rem;
-                    content: "\25CF";
-                    color: $color__text;
-                    opacity: 0.4;
-                }
+        .selected { background-color: $color__accent--background; }
+
+        li {
+            display: inline-block;
+            padding: 1rem 2.6rem;
+            margin: 0;
+            font-weight: normal;
+            font-size: 1rem;
+            border: 1px solid $color__borderLinkList;
+            border-right: none;
+
+            &:first-child {
+                border-top-left-radius: 0.4rem;
+                border-bottom-left-radius: 0.4rem;
+            }
+
+            &:last-child {
+                border-right: 1px solid $color__borderLinkList;
+                border-top-right-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
             }
         }
     }
 
     h2 {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 }
