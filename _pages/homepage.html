@@ -29,10 +29,10 @@ layout: default
 {% assign testimonialName = site.data.copy.homepage.testimonial.name %}
 {% assign testimonialTitle = site.data.copy.homepage.testimonial.title %}
 {% assign testimonialPhotoFilenameSlug = site.data.copy.homepage.testimonial.photoFileNameSlug %}
-{% comment %}{% include testimonials.html message=testimonialMessage name=testimonialName title=testimonialTitle photoFilenameSlug=testimonialPhotoFilenameSlug %}{% endcomment %}
 
 {% include billboard.html %}
 {% include showsPosterList.html shows=shows%}
 {% include showsList.html shows=shows%}
+{% include testimonials.html message=testimonialMessage name=testimonialName title=testimonialTitle photoFilenameSlug=testimonialPhotoFilenameSlug %}
 {% include features.html message=newsletterMessage diverseMessage=diverseMessage digestibleMessage=digestibleMessage discussMessage=discussMessage %}
 {% include footerMenu.html  %}
