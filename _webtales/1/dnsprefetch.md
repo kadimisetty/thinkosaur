@@ -15,7 +15,7 @@ relevantLinks:
     url: https://www.nngroup.com/articles/response-times-3-important-limits/
   - title: 200ms delays — Chromium DNS Prefetching
     url: https://www.chromium.org/developers/design-documents/dns-prefetching
-  - title: MDN on Prefetching
+  - title: Controlling DNS Prefetching on MDN
     url: https://developer.mozilla.org/en-US/docs/Web/HTTP/Controlling_DNS_prefetching
   - title: Webpagetest
     url: http://www.webpagetest.org
@@ -23,11 +23,11 @@ relevantLinks:
     url: http://www.stevesouders.com/blog/2013/11/07/prebrowsing/
   - title: Eliminating Roundtrips with Preconnect
     url: https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/
-  - title: Inspecting DNS Prefetching and resolver performance
+  - title: Inspecting DNS prefetching and resolver performance
     url: http://www.cambus.net/inspecting-dns-prefetching-and-resolver-performance-within-chrome/
-  - title: caniuse.com dns-prefetch
+  - title: Browser Support for dns-prefetch
     url: http://caniuse.com/#feat=link-rel-dns-prefetch
-  - title: caniuse.com preconnect
+  - title: Browser Support for preconnect
     url: http://caniuse.com/#feat=link-rel-preconnect
 ---
 Load pages faster by caching DNS queries and TCP handshakes 
