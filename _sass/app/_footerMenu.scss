@@ -17,12 +17,16 @@
 
         li {
             display: inline-block;
-            padding: 1rem 2.6rem;
+            min-width: 8rem;
+            padding: 1rem;
             margin: 0;
-            font-weight: normal;
-            font-size: 1rem;
+
             border: 1px solid $color__borderLinkList;
             border-right: none;
+
+            font-weight: normal;
+            font-size: 1rem;
+            text-align: center;
 
             &:first-child {
                 border-top-left-radius: 0.4rem;
