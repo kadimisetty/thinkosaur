@@ -27,13 +27,13 @@ collections:
     description: Get intimate with your Mac
     hostID: sri
     output: true
-  vimwatch:
-    slug: vimwatch
-    permalink: /vimwatch/:path/
-    name: vim.watch
-    description: Master the editor extraordinaire
-    hostID: sri
-    output: true
+  # vimwatch:
+  #   slug: vimwatch
+  #   permalink: /vimwatch/:path/
+  #   name: vim.watch
+  #   description: Master the editor extraordinaire
+  #   hostID: sri
+  #   output: true
   # pycandy:
   #   slug: pycandy
   #   permalink: /pycandy/:path/
