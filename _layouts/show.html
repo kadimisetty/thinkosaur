@@ -2,8 +2,7 @@
 layout: default
 ---
 
-{% comment %} RETRIEVE SHOW FROM COLLECTIONS USING SHOWLABEL
-{% endcomment %}
+{% comment %}RETRIEVE SHOW FROM COLLECTIONS USING SHOWLABEL{% endcomment %}
 {% assign showLabel = page.showLabel %}
 {% assign showsWithHashes = site.collections %}
 {% for showHash in showsWithHashes %}
@@ -12,7 +11,7 @@ layout: default
   {% endif %}
 {% endfor %}
 
-{% comment %} PREPARE COPY FOR NEWSLETTER {% endcomment %}
+{% comment %}PREPARE COPY FOR NEWSLETTER{% endcomment %}
 {% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}
 
 {% include headerMenu.html  %}
