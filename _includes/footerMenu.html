@@ -8,10 +8,10 @@
     {% comment %}No space in html between li elements to avoid gaps in middle of inline-block{% endcomment %}
     <li {% if selected == "shows" %}class="selected"{% endif %}>
       <a href="/">Shows </a>
-    </li><li {% if selected=="podcast" %}class="selected"{% endif %}>
-      <a href="/podcast">Podcast</a>
     </li><li>
       <a href="{{ site.meta.loungeURL }}">Lounge</a>
+    </li><li {% if selected=="podcast" %}class="selected"{% endif %}>
+      <a href="/podcast">Podcast</a>
     </li>
   </ul>
 
