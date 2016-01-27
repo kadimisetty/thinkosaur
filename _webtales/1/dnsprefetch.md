@@ -2,7 +2,7 @@
 title: Prefetching DNS & Connections
 index: 1
 layout: episode
-vimeoID: 120830517
+vimeoID: 153216507
 publishDate: 2013-07-04
 duration: 7
 featured:
