@@ -1,5 +1,3 @@
 .videoPlayer {
-    iframe { margin: 0 auto; }
-
-    @include fadeInUp($duration: 1s, $delay: 0s);
+    // Using Saffron fadeUp animation has issue with video full screen
 }

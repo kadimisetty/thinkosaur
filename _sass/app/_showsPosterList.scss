@@ -1,12 +1,64 @@
 .showsPosterList {
     @include desktop {
         @include fadeInUp($duration: 1s, $delay: 0s);
+
+        margin-top: 1.4rem;
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+
+            li {
+                padding-top:2rem;
+                padding-bottom:1rem;
+
+                border-top: 1px solid $color__borderLinkList;
+                border-left: 1px solid $color__borderLinkList;
+                border-right: 1px solid $color__borderLinkList;
+
+                &:first-child {
+                    border-top-left-radius: 0.4rem;
+                    border-top-right-radius: 0.4rem;
+                }
+
+
+                &:last-child {
+                    border-bottom: 1px solid $color__borderLinkList; 
+                    border-bottom-left-radius: 0.4rem;
+                    border-bottom-right-radius: 0.4rem;
+                }
+            }
+
+            h2 {
+
+                a {
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            h3 {
+                padding-top: 1rem;
+            }
+        }
+    }
+
+    @include mobile { display: none; }
+}
+
+/*
+.showsPosterList {
+    @include desktop {
+        @include fadeInUp($duration: 1s, $delay: 0s);
         ul {
             list-style-type: none;
             text-align: center;
 
             li {
                 height: 13rem;
+
+                padding-bottom: 1rem;
+                &:last-child { padding-bottom: 0; }
             }
 
             h2 {
@@ -18,3 +70,4 @@
 
     @include mobile { display: none; }
 }
+*/

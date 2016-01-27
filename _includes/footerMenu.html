@@ -1,7 +1,20 @@
 <section class="footerMenu pb">
+
+  {% comment %}PREPARE SELECTED LISTS{% endcomment %}
+  {% assign selected = include.selected %}
+
+
   <ul>
-    <li><a href="/">Shows</a></li>
-    <li><a href="https://twitter.com/{{ site.meta.twitterID }}">@{{ site.meta.twitterID }}</a></li>
-    <li><a href="/podcast">Podcast</a></li>
+    {% comment %}No space in html between li elements to avoid gaps in middle of inline-block{% endcomment %}
+    <li {% if selected == "shows" %}class="selected"{% endif %}>
+      <a href="/">Shows </a>
+    </li><li>
+      <a href="{{ site.meta.loungeURL }}">Lounge</a>
+    </li><li {% if selected=="podcast" %}class="selected"{% endif %}>
+      <a href="/podcast">Podcast</a>
+    </li>
   </ul>
+
+
+  <h2>&copy; {{ site.time | date: '%Y' }} {{ site.data.hosts.sri.name }}</h2>
 </section

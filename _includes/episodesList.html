@@ -1,13 +1,25 @@
 <section class="episodesList pb">
-<ul>
 
-  {% assign episodes = include.show.docs %}
-  {% assign sortedEpisodes = episodes | sort:"index" %}
-  {% assign reversedSortedEpisodes = sortedEpisodes | reverse %}
-  {% for episode in reversedSortedEpisodes %}
-    <li> <a href="{{ episode.url }}"
-         data-desc="{{ episode.content }}">
-        {{ episode.title }}</a> </li>
-  {% endfor %}
-</ul>
+  <h2>Season One &middot; Spring 2016</h2>
+  <h3> Bi-weekly Episodes by {{ site.data.hosts.sri.name }} </h3>
+
+  <ul>
+    {% comment %}PREPARE ORDERED EPISODES{% endcomment %}
+    {% assign show = include.show %}
+    {% assign slug = show.slug %}
+    {% assign episodes = show.docs %}
+    {% assign sortedEpisodes = episodes | sort:"index" %}
+    {% assign reversedSortedEpisodes = sortedEpisodes | reverse %}
+
+    {% for episode in reversedSortedEpisodes %}
+      {% comment %}PREPARE EPISODE{% endcomment %}
+      {% assign url = episode.url %}
+      {% assign content = episode.content %}
+      {% assign title = episode.title %}
+
+      <li> <a href="{{ url }}" data-desc="{{ content }}"> {{ title }}</a> </li>
+    {% endfor %}
+  </ul>
+
+  <h4> <a href="{{ site.meta.loungeURL }}/c/{{ slug }}">Discuss this show in the Lounge</a> </h4>
 </section>

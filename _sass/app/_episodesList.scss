@@ -3,19 +3,49 @@
     @include fadeInUp($duration: 1s, $delay: 0s); 
 
     @include desktop {
-        margin-top: 6rem;
+        margin-top: 3rem;
         margin-bottom: 6rem;
+
+        h2, h3 {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        h2 { font-weight: bold;
+        }
+        h3 {
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            text-align: center;
+            a {
+                font-weight: normal;
+            }
+        }
 
         li {
             min-height: 6rem;
             position: relative;
             text-align: center;
 
-            border-top: 1px solid darken($color__background, 4%);
-            border-left: 1px solid darken($color__background, 4%);
-            border-right: 1px solid darken($color__background, 4%);
+            border-top: 1px solid $color__borderLinkList;
+            border-left: 1px solid $color__borderLinkList;
+            border-right: 1px solid $color__borderLinkList;
 
-            &:last-child { border-bottom: 1px solid darken($color__background, 4%); }
+            &:first-child {
+                border-top-left-radius: 0.4rem;
+                border-top-right-radius: 0.4rem;
+            }
+
+            &:last-child {
+                border-bottom: 1px solid $color__borderLinkList; 
+                border-bottom-left-radius: 0.4rem;
+                border-bottom-right-radius: 0.4rem;
+            }
 
             a {
                 display: block;
@@ -54,6 +84,18 @@
     @include mobile {
         margin-top: 3rem;
         margin-bottom: 3rem;
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: normal;
+            margin-bottom: 1rem;
+        }
+
+        h4 { display: none;}
+
 
         li {
             a {

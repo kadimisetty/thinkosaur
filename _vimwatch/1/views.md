@@ -3,8 +3,10 @@ title: Views
 index: 1
 layout: episode
 vimeoID: 120830517
+publishDate: 2013-07-04
+duration: 5
 featured:
-  - vim
+  - Vim 7.4
 relevantLinks:
   - title: Section 21.5
     url: http://vimdoc.sourceforge.net/htmldoc/usr_21.html#21.5
@@ -15,3 +17,4 @@ relevantLinks:
   - title: restore_views.vim
     url: http://www.vim.org/scripts/script.php?script_id=4021
 ---
+Persist a window's settings with views

@@ -1,6 +1,12 @@
 // COLORS
 // Backgrounds
 $color__background: #F9726C;
+$color__accent--background: darken($color__background, 1%);
+
+// Borders
+$color__borderLinkList--light: lighten($color__background, 4%);
+$color__borderLinkList--dark: darken($color__background, 4%);
+$color__borderLinkList: $color__borderLinkList--dark;
 
 // Text
 $color__text: #D1524A;
@@ -9,7 +15,6 @@ $color__text: #B84D49;
 $color__text--heading: #B84840;
 $color__text--subheading: darken(#C24E47, 10%);
 
-$color__accent--background: #F26F68;
 
 // Links
 $color__link: #F7FFD9;

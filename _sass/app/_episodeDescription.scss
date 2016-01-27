@@ -2,16 +2,29 @@
 
     text-align: center;
 
-
     @include desktop {
         margin-top: 1rem;
         margin-bottom: 2rem;
 
         @include fadeInUp($duration: 1s, $delay: 0s);
+
+        .metaInfo {
+            display: inline;
+            padding: 0.2rem 0.4rem 0.1rem 0.4rem;
+
+            border: 1px solid $color__borderLinkList;
+            border-radius: 0.2rem;
+
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
     }
 
     @include mobile {
         margin-top: 1rem;
         margin-bottom: 1rem;
+
+        .metaInfo { display: none;}
     }
 }

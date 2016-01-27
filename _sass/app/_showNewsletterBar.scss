@@ -1,12 +1,14 @@
 .showNewsletterBar {
     @include desktop {
+        margin-bottom: 2rem;
+        padding-top:2rem;
+        padding-bottom: 2rem;
 
         background-color: $color__accent--background;
         border-radius: 0.4rem;
 
-        margin-bottom: 2rem;
-        padding-top:2rem;
-        padding-bottom: 2rem;
+
+        @include fadeInUp($duration: 0.2s, $delay: 0s);
 
         .newsletterSignup {
             p {

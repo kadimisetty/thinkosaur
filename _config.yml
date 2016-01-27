@@ -1,27 +1,57 @@
 meta:
   twitterID: hithinkosaur
+  loungeURL: "http://lounge.thinkosaur.com"
 
 collections:
   pages:
     output: true
-  vimwatch:
-    slug: vimwatch
-    permalink: /vimwatch/:path/
-    name: vim.watch
-    description: Learn about the editor extraordinaire
+
+  webtales:
+    slug: webtales
+    permalink: /webtales/:path/
+    name: Web Tales
+    description: The browsers have stories to tell
     hostID: sri
     output: true
-  hashbang:
-    slug: hashbang
-    permalink: /hashbang/:path/
-    name: Hash Bang
-    description: Unix — Ins, outs and everything in between
-    hostID: sri
-    output: true
-  macsquared:
-    slug: macsquared
-    permalink: /macsquared/:path/
-    name: Mac Squared
-    description: Get intimate with the Mac
-    hostID: sri
-    output: true
+  # hashbang:
+  #   slug: hashbang
+  #   permalink: /hashbang/:path/
+  #   name: Hash Bang
+  #   description: Unix is your new best friend
+  #   hostID: sri
+  #   output: true
+  # macsquared:
+  #   slug: macsquared
+  #   permalink: /macsquared/:path/
+  #   name: Mac Squared
+  #   description: Get intimate with your Mac
+  #   hostID: sri
+  #   output: true
+  # vimwatch:
+  #   slug: vimwatch
+  #   permalink: /vimwatch/:path/
+  #   name: vim.watch
+  #   description: Master the editor extraordinaire
+  #   hostID: sri
+  #   output: true
+  # pycandy:
+  #   slug: pycandy
+  #   permalink: /pycandy/:path/
+  #   name: py candy
+  #   description: Sweet learning for the modern pythonista
+  #   hostID: sri
+  #   output: true
+  # paperplanes:
+  #   slug: paperplanes
+  #   permalink: /paperplanes/:path/
+  #   name: Paper Planes
+  #   description: Build great products by learning to prototype
+  #   hostID: sri
+  #   output: true
+  # gitsetgo:
+  #   slug: gitsetgo
+  #   permalink: /gitsetgo/:path/
+  #   name: Git Set Go!
+  #   description: Learn the one true way to track everything
+  #   hostID: sri
+  #   output: true
