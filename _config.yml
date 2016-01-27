@@ -13,20 +13,20 @@ collections:
     description: The browsers have stories to tell
     hostID: sri
     output: true
-  hashbang:
-    slug: hashbang
-    permalink: /hashbang/:path/
-    name: Hash Bang
-    description: Unix is your new best friend
-    hostID: sri
-    output: true
-  macsquared:
-    slug: macsquared
-    permalink: /macsquared/:path/
-    name: Mac Squared
-    description: Get intimate with your Mac
-    hostID: sri
-    output: true
+  # hashbang:
+  #   slug: hashbang
+  #   permalink: /hashbang/:path/
+  #   name: Hash Bang
+  #   description: Unix is your new best friend
+  #   hostID: sri
+  #   output: true
+  # macsquared:
+  #   slug: macsquared
+  #   permalink: /macsquared/:path/
+  #   name: Mac Squared
+  #   description: Get intimate with your Mac
+  #   hostID: sri
+  #   output: true
   # vimwatch:
   #   slug: vimwatch
   #   permalink: /vimwatch/:path/
