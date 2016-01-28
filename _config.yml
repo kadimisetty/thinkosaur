@@ -1,6 +1,7 @@
 meta:
   twitterID: hithinkosaur
   loungeURL: "http://lounge.thinkosaur.com"
+  siteTitle: "thinkosaur"
 
 collections:
   pages:
