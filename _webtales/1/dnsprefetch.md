@@ -4,6 +4,7 @@ index: 1
 layout: episode
 vimeoID: 153216507
 loungeURL: http://lounge.thinkosaur.com/t/prefetching-dns-and-tcp-connections-s1e1/15
+transcriptURL: http://thinkosaur.com
 publishDate: 2016-01-26
 duration: 7
 featured:
