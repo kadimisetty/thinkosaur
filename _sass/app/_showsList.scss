@@ -12,7 +12,7 @@
             min-height: 5rem;
             margin-bottom: 0.4rem; 
             margin-bottom: 1rem; 
-        
+
             &:hover {
                 font-size: 3.4rem;
 
@@ -30,8 +30,10 @@
                     color: $color__link;
 
                     @include fadeInUp($duration: 0.2s, $delay: 0s);
-                } } } 
-            
+                } 
+            } 
+        } 
+
         @include mobile { 
             font-size: 2.4rem;
             a {
@@ -40,7 +42,8 @@
                 &:hover {
                     font-size: 2rem;
                     &:after { display: none; }
-                } } 
-            }
+                } 
+            } 
+        }
     }
 }
