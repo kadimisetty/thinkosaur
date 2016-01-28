@@ -3,6 +3,11 @@
   <head>
     <!-- META -->
     <meta charset="UTF-8">
+    <!-- DNS PREFETCHES -->
+    {% comment %}Array of root URLs to dns-prefetch{% endcomment %}
+    {% assign URLs = "//lounge.thinkosaur.com|//player.vimeo.com" | split: "|" %}
+    {% include dnsPrefetches.html URLs=URLs %}
+    <!-- META CONTINUED-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
