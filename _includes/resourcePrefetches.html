@@ -1,0 +1,5 @@
+{% comment %}Create a list of prefetching link tags for supplied array of resource URL{% endcomment %}
+{% for URL in include.URLs %}
+  <link rel="prefetch" href="{{ URL }}">
+{% endfor %}
+
