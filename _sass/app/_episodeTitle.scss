@@ -1,7 +1,5 @@
 .episodeTitle {
 
-    @include fadeInUp($duration: 1s, $delay: 0s);
-
     @include desktop {
         position: relative;
         min-height: 6rem;
