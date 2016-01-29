@@ -1,7 +1,8 @@
 meta:
   twitterID: hithinkosaur
   loungeURL: "http://lounge.thinkosaur.com"
-  siteTitle: "thinkosaur"
+  siteTitle: thinkosaur
+  siteDescription: Short shows for programmers
 
 collections:
   pages:
