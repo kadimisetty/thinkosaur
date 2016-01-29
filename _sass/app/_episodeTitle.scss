@@ -11,7 +11,7 @@
         border-top-left-radius: 0.4rem;
         border-top-right-radius: 0.4rem;
 
-        @include fadeInUp($duration: 0.2s, $delay: 0s);
+        @include fadeInUp($duration: 0.4s, $delay: 0s);
 
         a {
             display: block;
