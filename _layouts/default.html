@@ -31,10 +31,11 @@
     {% include resourcePrefetches.html URLs=URLsToPrefetch %}
 
     <!-- TWITTER CARD -->
+    {% capture twitterCardDescription %}{{ site.data.copy.homepage.tagLine.firstLine }} {{ site.data.copy.homepage.tagLine.secondLine }}{% endcapture %}
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ site.meta.twitterID }}" />
     <meta name="twitter:title" content="{{ siteTitle }}" />
-    <meta name="twitter:description" content="Shows for programmers" />
+    <meta name="twitter:description" content="{{ twitterCardDescription }}" />
     <meta name="twitter:image" content="http://thinkosaur.com/assets/img/twitterCardImage.png" />
   </head>
   <body>
