@@ -12,8 +12,11 @@
     <!-- META CONTINUED-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.meta.siteTitle }}{% if page.showLabel %} {{ page.showLabel }}{% endif %}{% if page.title %} - {{ page.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.meta.siteTitle }}, {{ site.meta.siteDescription }} {{ page.showLabel }} {% if page.title %}{{ page.title }} - {{ page.content | strip_html | truncatewords: 50 }}{% endif %}">
+
+    {% capture siteTitle %}{{ site.meta.siteTitle }}{% if page.showLabel %} {{ page.showLabel }}{% endif %}{% if page.title %} - {{ page.title }}{% endif %}{% endcapture %}
+    {% capture siteDescription %}{{ site.meta.siteTitle }}, {{ site.meta.siteDescription }} {{ page.showLabel }} {% if page.title %}{{ page.title }} - {{ page.content | strip_html | truncatewords: 50 }}{% endif %}{% endcapture %}
+    <title>{{ sitetitle }}</title>
+    <meta name="description" content="{{ siteDescription }}">
 
     <!-- STYLES -->
     <link rel="stylesheet" href="/css/app.css">
@@ -26,6 +29,13 @@
     {% comment %}Array of resource URLs to prefetch{% endcomment %}
     {% assign URLsToPrefetch = "/assets/img/thinkosaurShow.png|/assets/img/thinkosaurShow@2x.png|/assets/img/thinkosaurHeader.png|/assets/img/thinkosaurHeader@2x.png|/assets/img/webtalesMasthead.png|/assets/img/webtalesMasthead@2x.png" | split: "|" %}
     {% include resourcePrefetches.html URLs=URLsToPrefetch %}
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.meta.twitterID }}" />
+    <meta name="twitter:title" content="{{ siteTitle }}" />
+    <meta name="twitter:description" content="{{ siteDescription }}" />
+    <meta name="twitter:image" content="/assets/img/twitterCardImage.png" />
   </head>
   <body>
 
