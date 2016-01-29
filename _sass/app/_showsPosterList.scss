@@ -45,29 +45,3 @@
 
     @include mobile { display: none; }
 }
-
-/*
-.showsPosterList {
-    @include desktop {
-        @include fadeInUp($duration: 1s, $delay: 0s);
-        ul {
-            list-style-type: none;
-            text-align: center;
-
-            li {
-                height: 13rem;
-
-                padding-bottom: 1rem;
-                &:last-child { padding-bottom: 0; }
-            }
-
-            h2 {
-                margin-top: 0.4rem;
-
-            }
-        }
-    }
-
-    @include mobile { display: none; }
-}
-*/
