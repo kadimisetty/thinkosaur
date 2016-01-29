@@ -1,5 +1,5 @@
 ---
-title: Prefetching DNS & Connections
+title: Prefetching DNS & Preconnect
 index: 1
 layout: episode
 vimeoID: 153216507
@@ -32,6 +32,6 @@ relevantLinks:
   - title: Browser Support for preconnect
     url: http://caniuse.com/#feat=link-rel-preconnect
 ---
-Load pages faster by caching DNS queries and TCP handshakes 
+Load pages faster by caching DNS resolutions and TCP handshakes 
 
 
