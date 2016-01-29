@@ -19,3 +19,4 @@ $color__text--subheading: darken(#C24E47, 10%);
 // Links
 $color__link: #F7FFD9;
 $color__link--disabled: #EC6861;
+$color__link--visited: mix($color__link, $color__background, 40%);
