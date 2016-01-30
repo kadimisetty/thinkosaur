@@ -4,12 +4,12 @@
 * Version: 0.5 Oct 2015
 * 
 * Notes:
-* 1. Element in a `whole` class occupies the entire width.
-* 2. Element in a `half` class occupies half the width.
-* 3. A `half` has to be placed inside a `whole`.
-* 4. A `whole` can contain two `half`s.
-* 5. A `padded-half` provides some padding towards the center.
-* 6. Use two `padded-half`s to have a gutter in the center.
+* 1. Element in a `pb` class occupies the entire width.
+* 2. Element in a `pb-half` class occupies half the width.
+* 3. A `pb-half` has to be placed inside a `pb`.
+* 4. A `pb` can contain two `pb-half`s.
+* 5. A `pb-half-flush` provides np padding towards the center.
+* 6. Two 'pb-half's have a gutter in the center
 * 7. There is no parent "grid container".
 *
 * TODO: 
