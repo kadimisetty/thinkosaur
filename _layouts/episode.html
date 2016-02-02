@@ -1,17 +1,9 @@
 ---
 layout: default
 ---
-{% comment %} PREPARE SHOW AND EPISODE
- Use page information to retrieve containing show/collection
-{% endcomment %}
+{% comment %}PREPARE SHOW AND EPISODE {% endcomment %}
 {% assign showLabel = page.collection %}
-{% assign showsWithHashes = site.collections %}
-{% for showHash in showsWithHashes %}
-  {% if showHash[1].label == showLabel %}
-    {% assign show = showHash[1] %}
-    {% assign showSlug = show.slug %}
-  {% endif %}
-{% endfor %}
+{% assign show = site.collections | where: "label", showLabel | first %}
 
 {% comment %}PREPARE COPY FOR NEWSLETTER {% endcomment %}
 {% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}

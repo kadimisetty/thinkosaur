@@ -4,12 +4,8 @@ layout: default
 
 {% comment %}RETRIEVE SHOW FROM COLLECTIONS USING SHOWLABEL{% endcomment %}
 {% assign showLabel = page.showLabel %}
-{% assign showsWithHashes = site.collections %}
-{% for showHash in showsWithHashes %}
-  {% if showHash[1].label == showLabel %}
-    {% assign show = showHash[1] %}
-  {% endif %}
-{% endfor %}
+{% assign show = site.collections | where: "label", showLabel | first %}
+
 
 {% comment %}PREPARE COPY FOR NEWSLETTER{% endcomment %}
 {% assign newsletterMessage=site.data.copy.homepage.newsletter.message %}

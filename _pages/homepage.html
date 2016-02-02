@@ -4,15 +4,14 @@ layout: default
 ---
 
 {% comment %} PREPARE LIST OF SHOWS
-1. Get all collections
-2. Make list of collections without hashes
-3. Remove Pages from that list
+- Get all collections
+- Remove pages and posts from that list
 {% endcomment %}
-{% assign showsWithHashes = site.collections %}
+{% assign showsAndPages = site.collections %}
 {% assign shows = "" | split: "|" %}
-{% for showHash in showsWithHashes %}
-  {% unless showHash[1].label == 'pages' %}
-    {% assign shows = shows | push:showHash[1] %}
+{% for show in showsAndPages %}
+  {% unless show.label == 'pages' or show.label == 'posts' %}
+    {% assign shows = shows | push:show %}
   {% endunless %}
 {% endfor %}
 
@@ -30,6 +29,7 @@ layout: default
 {% assign testimonialTitle = site.data.copy.homepage.testimonial.title %}
 {% assign testimonialPhotoFilenameSlug = site.data.copy.homepage.testimonial.photoFileNameSlug %}
 {% comment %}{% include testimonials.html message=testimonialMessage name=testimonialName title=testimonialTitle photoFilenameSlug=testimonialPhotoFilenameSlug %}{% endcomment %}
+
 
 {% include billboard.html %}
 {% include showsPosterList.html shows=shows%}
