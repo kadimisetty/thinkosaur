@@ -34,7 +34,7 @@ collections:
     slug: vimwatch
     permalink: /vimwatch/:path/
     name: vim.watch
-    description: Master the editor extraordinaire
+    description: Master Vim, the editor extraordinaire
     hostID: sri
     output: true
   # pycandy:
