@@ -46,7 +46,7 @@
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
       {% comment %}Load analytis only during production. Github Pages will set environment as production{% endcomment %}
       {% if jekyll.environment == 'production' %}
-        {% include googleAnalytics.html trackingID="{{ site.meta.googleAnalyticsTrackingID }}" %}
+        {% include googleAnalytics.html trackingID=site.meta.googleAnalyticsTrackingID %}
       {% endif %}
   </body>
 </html>
