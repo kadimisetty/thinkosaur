@@ -2,8 +2,11 @@
 title: Views
 index: 1
 layout: episode
-vimeoID: 120830517
+vimeoID: 154038251
 publishDate: 2013-07-04
+loungeURL: http://lounge.thinkosaur.com/t/views-vim-watch-s1e1/22
+transcriptURL: /vimwatch/1/viewsTranscript.md
+publishDate: 2016-01-26
 duration: 5
 featured:
   - Vim 7.4
