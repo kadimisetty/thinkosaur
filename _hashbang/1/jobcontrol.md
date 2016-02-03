@@ -2,9 +2,11 @@
 title: Job Control
 index: 1
 layout: episode
-vimeoID: 120830517
-publishDate: 2013-07-04
-duration: 5
+vimeoID: 154025441
+loungeURL: http://lounge.thinkosaur.com/t/job-control-hashbang-s1e1/20
+transcriptURL: /hashbang/1/jobcontrolTranscript.md
+publishDate: 2016-02-03
+duration: 7
 featured:
   - zsh 5.0.8
 relevantLinks:
@@ -15,4 +17,4 @@ relevantLinks:
   - title: Job Control — Digital Ocean
     url: https://www.digitalocean.com/community/tutorials/how-to-use-bash-s-job-control-to-manage-foreground-and-background-processes
 ---
-Efficiently multitask inside a shell
+Multitask efficiently inside a shell
