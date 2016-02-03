@@ -20,7 +20,7 @@ collections:
     slug: hashbang
     permalink: /hashbang/:path/
     name: Hash Bang
-    description: Unix is your new best friend
+    description: Become a command line warrior
     hostID: sri
     output: true
   # macsquared:
