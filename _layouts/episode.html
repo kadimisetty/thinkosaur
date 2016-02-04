@@ -24,12 +24,13 @@ layout: default
 {% include episodeTitle.html title=episodeTitle url=episodeURL description=episodeDescription %}
 {% include videoPlayer.html vimeoID=episodeVimeoID %}
 {% comment %} Disable comments and transcript untill comments are available
-  {% include subLinks.html transcriptURL=episodeTranscriptURL %}
 {% endcomment %}
+{% include subLinks.html transcriptURL=episodeTranscriptURL %}
 {% include episodeDescription.html description=episodeDescription duration=episodeDuration publishDate=episodePublishDate featured=episodeFeatured %}
 {% if page.relevantLinks %}
   {% include relevantLinksList.html links=page.relevantLinks %}
 {% endif %}
+{% include episodeComments.html %}
 {% include showNewsletterBar.html message=newsletterMessage %}
 {% include footerMenu.html %}
 
