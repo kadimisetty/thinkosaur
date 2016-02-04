@@ -37,11 +37,11 @@ collections:
     description: Master Vim, the editor extraordinaire
     hostID: sri
     output: true
-  # pycandy:
-  #   slug: pycandy
-  #   permalink: /pycandy/:path/
-  #   name: py candy
-  #   description: Sweet learning for the modern pythonista
+  # ecstatic:
+  #   slug: ecstatic
+  #   permalink: /ecstatic/:path/
+  #   name: ecstatic
+  #   description: Learn the delights of a static web
   #   hostID: sri
   #   output: true
   # paperplanes:
