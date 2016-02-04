@@ -3,7 +3,6 @@ title: Job Control
 index: 1
 layout: episode
 vimeoID: 154025441
-loungeURL: http://lounge.thinkosaur.com/t/job-control-hashbang-s1e1/20
 transcriptURL: /hashbang/1/jobcontrolTranscript.md
 publishDate: 2016-02-03
 duration: 7

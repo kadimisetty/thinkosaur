@@ -1,62 +1,28 @@
 .footerMenu {
-    text-align: center;
 
     @include desktop {
         margin-top: 4rem;
         margin-bottom: 3rem;
+        text-align: center;
 
-        @include fadeInUp($duration: 0.2s, $delay: 0s);
+        h2 {
+            margin-bottom: 1rem;
 
-        ul {
-            list-style:none;
-            text-align:center;
-        }
-
-
-        .selected {
-            background-color: $color__accent--background; 
-            a {
-                opacity: $opacity__link--hover;
-            }
-        }
-
-        li {
-            display: inline-block;
-            min-width: 9rem;
-            margin: 0;
-
-            border: 1px solid $color__borderLinkList;
-            border-right: none;
-
-            font-weight: normal;
-            font-size: 1rem;
-            text-align: center;
+            font-size: 0.8rem;
 
             a {
-                padding: 1rem;
-                display: block;
-            }
+                padding: 0.6rem 1.2rem;
+                border: 1px solid $color__borderLinkList;
+                border-radius: 0.4rem;
 
-            &:hover {
-                background-color: $color__accent--background;
-            }
-
-            &:first-child {
-                border-top-left-radius: 0.4rem;
-                border-bottom-left-radius: 0.4rem;
-            }
-
-            &:last-child {
-                border-right: 1px solid $color__borderLinkList;
-                border-top-right-radius: 0.4rem;
-                border-bottom-right-radius: 0.4rem;
+                font-weight: normal;
+                font-size: 1rem;
             }
         }
     }
 
-    h2 {
-        margin-top: 1rem;
-        font-size: 0.8rem;
+    @include mobile {
+        display: none;
     }
 
 }

@@ -3,7 +3,6 @@ title: Prefetching DNS & Preconnect
 index: 1
 layout: episode
 vimeoID: 153843789
-loungeURL: http://lounge.thinkosaur.com/t/prefetching-dns-and-tcp-connections-s1e1/15
 transcriptURL: /webtales/1/dnsprefetchTranscript.md
 publishDate: 2016-01-26
 duration: 7

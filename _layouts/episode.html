@@ -16,7 +16,6 @@ layout: default
 {% assign episodePublishDate=page.publishDate %}
 {% assign episodeFeatured=page.featured %}
 {% assign episodeVimeoID=page.vimeoID %}
-{% assign episodeLoungeURL=page.loungeURL %}
 {% assign episodeTranscriptURL=page.transcriptURL %}
 
 
@@ -24,12 +23,12 @@ layout: default
 {% include showTitle.html show=show %}
 {% include episodeTitle.html title=episodeTitle url=episodeURL description=episodeDescription %}
 {% include videoPlayer.html vimeoID=episodeVimeoID %}
-{% include subLinks.html notesURL=episodeLoungeURL transcriptURL=episodeTranscriptURL %}
+{% include subLinks.html transcriptURL=episodeTranscriptURL %}
 {% include episodeDescription.html description=episodeDescription duration=episodeDuration publishDate=episodePublishDate featured=episodeFeatured %}
 
 {% if page.relevantLinks %}
-  {% include relevantLinksList.html links=page.relevantLinks episodeLoungeURL=episodeLoungeURL %}
+  {% include relevantLinksList.html links=page.relevantLinks %}
 {% endif %}
 {% include showNewsletterBar.html message=newsletterMessage %}
-{% include footerMenu.html  selected="shows" %}
+{% include footerMenu.html %}
 
