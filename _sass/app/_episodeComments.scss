@@ -1,7 +1,6 @@
 .episodeComments {
     margin-bottom: 6rem;
 
-<<<<<<< HEAD
     h3 {
         margin-bottom: 0.4rem;
         padding: 0.2rem 1rem;
@@ -9,27 +8,13 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 1rem;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .commentSection {
         padding: 1rem;
 
         background-color: $color__accent--background;
-=======
-        h3 {
-            margin-bottom: 0.4rem;
-            padding: 0.2rem 1rem;
-
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 1rem;
-            font-weight: normal;
-        }
-
-    .commentSection {
-        padding: 1rem;
->>>>>>> de08b41... add disqus forums
         border: 1px solid $color__borderLinkList;
         border-radius: 0.4rem;
     }
