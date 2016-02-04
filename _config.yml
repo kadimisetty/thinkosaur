@@ -3,6 +3,7 @@ meta:
   siteTitle: thinkosaur
   siteDescription: Short shows for programmers
   googleAnalyticsTrackingID: UA-73075513-1
+  siteURL: http://thinkosaur.com
 
 collections:
   pages:
