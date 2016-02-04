@@ -18,6 +18,11 @@ layout: default
 {% assign episodeVimeoID=page.vimeoID %}
 {% assign episodeTranscriptURL=page.transcriptURL %}
 
+{% comment %}PREPARE DISCUS CONFIGURATION VARIABLES{% endcomment %}
+{% capture siteURL %}{{ site.meta.siteURL }}{{ page.url }}{% endcapture %}
+{% comment %}Use the Page URL as Unique Page Identifier {% endcomment %}
+{% assign pageID=page.url %}
+
 
 {% include headerMenu.html  %}
 {% include showTitle.html show=show %}
@@ -30,7 +35,7 @@ layout: default
 {% if page.relevantLinks %}
   {% include relevantLinksList.html links=page.relevantLinks %}
 {% endif %}
-{% include episodeComments.html %}
+{% include episodeComments.html siteURL=siteURL pageID=pageID %}
 {% include showNewsletterBar.html message=newsletterMessage %}
 {% include footerMenu.html %}
 
