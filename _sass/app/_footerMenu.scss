@@ -7,18 +7,33 @@
         text-align: center;
 
         h2 {
-            margin-bottom: 2rem;
-
+            margin-top: 1.2rem;
             font-size: 0.8rem;
 
-            a {
-                padding: 1.2rem 2rem;
-                border: 1px solid $color__borderLinkList;
-                border-radius: 0.4rem;
+        }
 
-                font-weight: normal;
-                font-size: 1rem;
-            }
+        button {
+            padding: 1.2rem 2rem;
+
+            background-color: inherit;
+            color: $color__link; 
+
+            font-size: 1rem;
+            font-weight: bold;
+
+            border: 1px solid $color__borderLinkList;
+            border-radius: 0.4rem;
+
+            transition: opacity 0.1s ease-out; 
+
+            cursor: pointer; 
+
+            &:hover { 
+                opacity: $opacity__link--hover; 
+                transition: opacity 0.1s linear; 
+            } 
+
+            &:active { opacity: $opacity__link--active; } 
         }
     }
 

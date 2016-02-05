@@ -42,11 +42,21 @@
 
         {{ content }}
 
+
       <!-- SCRIPTS -->
+      <!-- jQuery Mini -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+      <!-- RetinaJS -->
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+
       {% comment %}Load analytis only during production. Github Pages will set environment as production{% endcomment %}
       {% if jekyll.environment == 'production' %}
+        <!-- Goodgle Analytics -->
         {% include googleAnalytics.html trackingID=site.meta.googleAnalyticsTrackingID %}
       {% endif %}
+
+      <!-- HelpScout Support Form-->
+      {% include helpScoutBeacon.html %}
   </body>
 </html>

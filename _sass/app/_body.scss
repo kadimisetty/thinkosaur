@@ -38,10 +38,11 @@ body {
             opacity: $opacity__link--hover; 
 
             // Transitions
-        transition: opacity 0.1s linear; } 
+            transition: opacity 0.1s linear; 
+        } 
 
-        &:active { 
-    opacity: $opacity__link--active; } } 
+        &:active { opacity: $opacity__link--active; } 
+    } 
 
     @include mobile {
         p, h1, h2, h3, h4, h5, form {
