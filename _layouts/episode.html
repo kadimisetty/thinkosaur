@@ -17,6 +17,7 @@ layout: default
 {% assign episodeFeatured=page.featured %}
 {% assign episodeVimeoID=page.vimeoID %}
 {% assign episodeTranscriptURL=page.transcriptURL %}
+{% assign episodeResources=page.resources %}
 
 {% comment %}PREPARE DISCUS CONFIGURATION VARIABLES{% endcomment %}
 {% capture siteURL %}{{ site.meta.siteURL }}{{ page.url }}{% endcapture %}
@@ -28,8 +29,7 @@ layout: default
 {% include showTitle.html show=show %}
 {% include episodeTitle.html title=episodeTitle url=episodeURL description=episodeDescription %}
 {% include videoPlayer.html vimeoID=episodeVimeoID %}
-{% comment %} Disable comments and transcript untill comments are available
-{% endcomment %}
+{% include extras.html transcriptURL= transcriptURL resources=episodeResources %}
 {% include episodeDescription.html description=episodeDescription duration=episodeDuration publishDate=episodePublishDate featured=episodeFeatured %}
 {% if page.relevantLinks %}
   {% include relevantLinksList.html links=page.relevantLinks %}
