@@ -2,7 +2,7 @@
 title: Views
 index: 1
 layout: episode
-vimeoID: 154038251
+vimeoID: 154376769
 publishDate: 2016-01-26
 duration: 5
 resources:
