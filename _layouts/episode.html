@@ -30,7 +30,6 @@ layout: default
 {% include videoPlayer.html vimeoID=episodeVimeoID %}
 {% comment %} Disable comments and transcript untill comments are available
 {% endcomment %}
-{% include subLinks.html transcriptURL=episodeTranscriptURL %}
 {% include episodeDescription.html description=episodeDescription duration=episodeDuration publishDate=episodePublishDate featured=episodeFeatured %}
 {% if page.relevantLinks %}
   {% include relevantLinksList.html links=page.relevantLinks %}
