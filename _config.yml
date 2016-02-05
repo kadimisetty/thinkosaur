@@ -5,6 +5,9 @@ meta:
   googleAnalyticsTrackingID: UA-73075513-1
   siteURL: http://thinkosaur.com
 
+sass:
+  style: compressed
+
 collections:
   pages:
     output: true
