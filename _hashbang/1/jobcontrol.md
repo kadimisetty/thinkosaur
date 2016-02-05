@@ -3,9 +3,15 @@ title: Job Control
 index: 1
 layout: episode
 vimeoID: 154025441
-transcriptURL: /hashbang/1/jobcontrolTranscript.md
 publishDate: 2016-02-03
 duration: 7
+resources:
+  - description: Transcript
+    url: /hashbang/1/jobcontrolTranscript.md
+    thumbnailFilename: extraTranscript.png
+  - description: Percentage Features
+    url: /hashbang/1/percentageFeatures.pdf
+    thumbnailFilename: percentageFeaturesThumbnail.png
 featured:
   - zsh 5.0.8
 relevantLinks:

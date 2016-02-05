@@ -7,10 +7,7 @@ transcriptURL: /webtales/1/dnsprefetchTranscript.md
 publishDate: 2016-01-26
 duration: 7
 resources:
-  - description: Soemthing
-    url: /webtales/1/dnsprefetchTranscript.md
-    thumbnailFilename: extraTranscript.png
-  - description: Soemthing
+  - description: Transcript
     url: /webtales/1/dnsprefetchTranscript.md
     thumbnailFilename: extraTranscript.png
 featured:

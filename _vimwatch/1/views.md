@@ -3,10 +3,12 @@ title: Views
 index: 1
 layout: episode
 vimeoID: 154038251
-publishDate: 2013-07-04
-transcriptURL: /vimwatch/1/viewsTranscript.md
 publishDate: 2016-01-26
 duration: 5
+resources:
+  - description: Transcript
+    url: /vimwatch/1/viewsTranscript.md
+    thumbnailFilename: extraTranscript.png
 featured:
   - Vim 7.4
 relevantLinks:

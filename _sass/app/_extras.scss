@@ -10,6 +10,8 @@
         box-shadow: inset 1px 1px 3px 0px $color__well--insetShadow;
         border-radius: 0px 0px 4px 4px;
 
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
+
         ul { 
             margin-bottom: 0;
             list-style: none;
@@ -18,9 +20,17 @@
         li {
             display: inline-block;
             margin-right: 0.4rem;
+
             &:last-child {
                 margin-right: 0.4rem;
             }
+        }
+
+        img {
+            max-height: 68px;
+
+            box-shadow: 0px 1px 1px 0px $color__well--resourceShadow;
+            border-radius: 3.03px;
         }
     }
 }

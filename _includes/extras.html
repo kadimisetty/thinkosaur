@@ -1,8 +1,10 @@
-<section class="extras pb">
-  <ul>
-    {% for resource in include.resources %}
-      {% comment %}PREPARE RESOURCE{% endcomment %}
-      {% include extraResource.html resourceURL=resource.url resourceDescription=resource.description resourceThumbnailFilename=resource.thumbnailFilename %}
-    {% endfor %}
-  </ul>
-</section>
+{% if include.resources %}
+  <section class="extras pb">
+    <ul>
+      {% for resource in include.resources %}
+        {% comment %}PREPARE RESOURCE{% endcomment %}
+        {% include extraResource.html resourceURL=resource.url resourceDescription=resource.description resourceThumbnailFilename=resource.thumbnailFilename %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
