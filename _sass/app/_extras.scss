@@ -3,13 +3,11 @@
 
     @include desktop {
         margin-top: 0;
-        padding: 1rem;
-        padding-bottom: 0.4rem;
-        padding-left: 0.4;
+        padding: 1rem 1rem 0.6rem 1rem;
 
+        border-radius: 0px 0px 4px 4px;
         background: $color__well--background;
         box-shadow: inset 1px 1px 3px 0px $color__well--insetShadow;
-        border-radius: 0px 0px 4px 4px;
 
         @include fadeInDown($duration: 0.4s, $delay: 0s);
 
@@ -22,9 +20,7 @@
             display: inline-block;
             margin-right: 0.4rem;
 
-            &:last-child {
-                margin-right: 0.4rem;
-            }
+            &:last-child { margin-right: 0.4rem; }
         }
 
         img {
