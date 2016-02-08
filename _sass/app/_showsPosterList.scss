@@ -1,4 +1,6 @@
 .showsPosterList {
+    @include mobile { display: none; }
+
     @include desktop {
         @include fadeInUp($duration: 1s, $delay: 0s);
 
@@ -21,7 +23,6 @@
                     border-top-right-radius: 0.4rem;
                 }
 
-
                 &:last-child {
                     border-bottom: 1px solid $color__borderLinkList; 
                     border-bottom-left-radius: 0.4rem;
@@ -37,11 +38,7 @@
                 }
             }
 
-            h3 {
-                padding-top: 1rem;
-            }
+            h3 { padding-top: 1rem; }
         }
     }
-
-    @include mobile { display: none; }
 }

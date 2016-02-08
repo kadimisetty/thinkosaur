@@ -11,8 +11,8 @@
             text-align: center;
         }
 
-        h2 { font-weight: bold;
-        }
+        h2 { font-weight: bold; }
+
         h3 {
             font-weight: normal;
             margin-bottom: 1rem;
@@ -20,22 +20,22 @@
 
         h4 {
             margin-top: 1rem;
+
             font-size: 0.8rem;
             text-align: center;
-            a {
-                font-weight: normal;
 
-            }
+            a { font-weight: normal;}
         }
 
         li {
             min-height: 6rem;
             position: relative;
-            text-align: center;
 
             border-top: 1px solid $color__borderLinkList;
             border-left: 1px solid $color__borderLinkList;
             border-right: 1px solid $color__borderLinkList;
+
+            text-align: center;
 
             &:first-child {
                 border-top-left-radius: 0.4rem;
@@ -48,7 +48,6 @@
                 border-bottom-right-radius: 0.4rem;
             }
 
-
             a {
                 display: block;
                 width: 100%;
@@ -60,44 +59,43 @@
                 font-weight: normal;
                 font-size: 2.2rem; 
 
+                &:hover {
+                    font-size: 1.8rem;
+
+                    // Hover ON
+                    transition: font-size 0.1s ease-out; 
+
+                    &:after {
+                        display: block;
+                        margin-top: 0.5rem;
+                        content: attr(data-desc);
+
+                        color: $color__link;
+
+                        font-size: 1rem;
+                        line-height: 1rem;
+                        font-weight: bold;
+
+                        @include fadeInUp($duration: 0.2s, $delay: 0s);
+                    }
+                } 
             }
-
-            a:hover {
-                font-size: 1.8rem;
-
-                // Hover ON
-                transition: font-size 0.1s ease-out; 
-
-                &:after {
-                    display: block;
-                    margin-top: 0.5rem;
-                    content: attr(data-desc);
-                    color: $color__link;
-                    font-size: 1rem;
-                    line-height: 1rem;
-                    font-weight: bold;
-
-                    @include fadeInUp($duration: 0.2s, $delay: 0s);
-            } } 
         } 
-
-
     }
+
 
     @include mobile {
         margin-top: 3rem;
         margin-bottom: 3rem;
 
-        h2, h3 {
-            text-align: center;
-        }
+        h2, h3 { text-align: center; }
 
         h3 {
             font-weight: normal;
             margin-bottom: 1rem;
         }
 
-        h4 { display: none;}
+        h4 {display: none;}
 
 
         li {
@@ -115,7 +113,6 @@
                     margin-top: 0.5rem;
                     content: attr(data-desc);
                     color: $color__text;
-
 
                     font-size: 1rem;
                     line-height: 1rem;

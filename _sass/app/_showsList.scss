@@ -1,5 +1,6 @@
 .showsList {
     margin-bottom: 3rem;
+
     text-align: center;
     font-size: 3.6rem;
     font-size: 4.2rem;
@@ -23,11 +24,11 @@
                     display: block;
                     margin-top: 0.6rem;
 
+                    color: $color__link;
+
                     content: attr(data-description);
                     font-size: 1rem;
                     font-weight: bold;
-
-                    color: $color__link;
 
                     @include fadeInUp($duration: 0.2s, $delay: 0s);
                 } 
@@ -36,11 +37,14 @@
 
         @include mobile { 
             font-size: 2.4rem;
+
             a {
                 min-height: 0;
                 margin-bottom: 2rem;
+
                 &:hover {
                     font-size: 2rem;
+
                     &:after { display: none; }
                 } 
             } 

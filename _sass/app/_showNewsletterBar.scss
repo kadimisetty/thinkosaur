@@ -1,4 +1,6 @@
 .showNewsletterBar {
+    @include mobile {display: none;}
+
     @include desktop {
         margin-bottom: 2rem;
         padding-top:2rem;
@@ -7,7 +9,6 @@
         background-color: $color__accent--background;
         border: 1px solid $color__borderLinkList;
         border-radius: 0.4rem;
-
 
         @include fadeInUp($duration: 0.2s, $delay: 0s);
 
@@ -24,11 +25,8 @@
         .thinkosaurShow {
             margin-top: 4.6rem;
             text-align: right;
-            img {
-                margin-right: 0.6rem;
-            }
+
+            img { margin-right: 0.6rem; }
         }
     }
-
-    @include mobile {display: none;}
 }

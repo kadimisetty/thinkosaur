@@ -1,6 +1,9 @@
 .testimonials {
+    @include mobile { display: none; }
+
     @include desktop {
         margin: 4rem auto 0 auto;
+
         background-image: url('/assets/img/heart.png');
         background-repeat: repeat;
         background-position: top; 
@@ -16,10 +19,11 @@
             background-position: top; 
 
             .message {
+                padding: 1.6rem 4.4rem;
+
+                font-weight: bold;
                 font-size: 2.1875rem;
                 line-height: 2.625rem;
-                padding: 1.6rem 4.4rem;
-                font-weight: bold;
             }
 
             .meta {
@@ -38,6 +42,7 @@
                     display: block;
                     margin-top: 0.6rem;
                     margin-bottom: 0.2rem;
+
                     font-weight: normal;
                     font-weight: bold;
                     line-height: 0.8rem;
@@ -50,7 +55,4 @@
             }
         }
     }
-
-    @include mobile { display: none; }
-
 }

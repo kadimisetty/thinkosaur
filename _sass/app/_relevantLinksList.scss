@@ -17,9 +17,8 @@
             margin-top: 1rem;
             font-size: 0.8rem;
             text-align: center;
-            a {
-                font-weight: normal;
-            }
+
+            a { font-weight: normal; }
         }
 
         li {
@@ -41,8 +40,6 @@
                 border-bottom-right-radius: 0.4rem;
             }
 
-
-
             a {
                 display: block;
                 position: absolute;
@@ -61,8 +58,8 @@
                 }
             }
         }
-
     }
+
 
     @include mobile {
         margin-top: 0rem;
@@ -78,14 +75,12 @@
         }
 
         h3 {
+            margin-bottom: 1rem;
+
             text-align: center;
             font-weight: normal;
-            margin-bottom: 1rem;
         }
 
-        h4 {
-            display: none;
-        }
+        h4 { display: none; }
     }
 }
-
