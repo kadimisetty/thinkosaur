@@ -1,3 +1,4 @@
+
 ---
 title: Job Control
 index: 1
@@ -12,6 +13,18 @@ resources:
   - description: Percentage Features
     url: /hashbang/1/percentageFeatures.pdf
     thumbnailFilename: extraSlides.png
+  - description: Transcript
+    url: /hashbang/1/jobcontrolTranscript.md
+    thumbnailFilename: extraChecklist.png
+  - description: Percentage Features
+    url: /hashbang/1/percentageFeatures.pdf
+    thumbnailFilename: extraSlides.png
+  - description: Percentage Features
+    url: /hashbang/1/percentageFeatures.pdf
+    thumbnailFilename: extraHD.png
+  - description: Percentage Features
+    url: /hashbang/1/percentageFeatures.pdf
+    thumbnailFilename: extraSD.png
 featured:
   - zsh 5.0.8
 relevantLinks:
