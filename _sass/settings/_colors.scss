@@ -4,9 +4,10 @@ $color__background: #F9726C;
 $color__accent--background: darken($color__background, 1%);
 
 // Borders
-$color__borderLinkList--light: lighten($color__background, 4%);
+$color__borderLinkList--light: lighten($color__background, 10%);
 $color__borderLinkList--dark: darken($color__background, 4%);
-$color__borderLinkList: $color__borderLinkList--dark;
+$color__borderLinkList--darker: darken($color__background, 6%);
+$color__borderLinkList: $color__borderLinkList--darker;
 
 // Text
 $color__text: #D1524A;
