@@ -9,6 +9,13 @@ collections:
   pages:
     output: true
 
+  webtales:
+    slug: webtales
+    permalink: /webtales/:path
+    name: Web Tales
+    description: The browsers have stories to tell
+    hostID: sri
+    output: true
   hashbang:
     slug: hashbang
     permalink: /hashbang/:path
@@ -21,13 +28,6 @@ collections:
     permalink: /vimwatch/:path
     name: vim.watch
     description: Master Vim, the editor extraordinaire
-    hostID: sri
-    output: true
-  webtales:
-    slug: webtales
-    permalink: /webtales/:path
-    name: Web Tales
-    description: The browsers have stories to tell
     hostID: sri
     output: true
   # macsquared:
