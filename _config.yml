@@ -1,9 +1,13 @@
+# SSL compliance. 
+# READ https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains
+enforce_ssl: thinkosaur.com 
+
 meta:
   twitterID: hithinkosaur
   siteTitle: thinkosaur
   siteDescription: Short shows for programmers
   googleAnalyticsTrackingID: UA-73075513-1
-  siteURL: http://thinkosaur.com
+  siteURL: https://thinkosaur.com
 
 collections:
   pages:
