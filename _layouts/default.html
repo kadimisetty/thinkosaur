@@ -15,7 +15,7 @@
 
     <!-- DNS PREFETCHES -->
     {% comment %}Array of root URLs to dns-prefetch{% endcomment %}
-    {% assign URLsToDNSPrefetch = "//lounge.thinkosaur.com|//player.vimeo.com|//f.vimeocdn.com|//cdnjs.cloudflare.com" | split: "|" %}
+    {% assign URLsToDNSPrefetch = "//player.vimeo.com|//f.vimeocdn.com|//cdnjs.cloudflare.com" | split: "|" %}
     {% include dnsPrefetches.html URLs=URLsToDNSPrefetch %}
 
 
