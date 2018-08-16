@@ -1,6 +1,0 @@
-{% comment %}Create a list of dns-prefetching meta tags for supplied array of domains{% endcomment %}
-<meta http-equiv="x-dns-prefetch-control" content="on">
-{% for URL in include.URLs %}
-  <link rel="dns-prefetch" href="{{ URL }}">
-{% endfor %}
-

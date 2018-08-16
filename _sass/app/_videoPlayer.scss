@@ -1,7 +1,0 @@
-.videoPlayer {
-    // Using Saffron fadeUp animation has issue with video full screen
-    background-color:  $color__accent--background;
-    margin-bottom: -2px;
-    // Make higher than the animated top and bottom additions
-    z-index: 100;
-}
