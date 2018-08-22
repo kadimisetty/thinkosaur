@@ -1,0 +1,15 @@
+// HELPER MIXINS
+
+$grid-max-width: 768px !default;
+
+@mixin desktop {
+    @media (min-width: #{$grid-max-width}) {
+        @content; 
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$grid-max-width - 1px}) {
+        @content; 
+    }
+}
