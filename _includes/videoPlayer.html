@@ -1,0 +1,21 @@
+<section class="videoPlayer pb">
+  {% comment %}PREPARE VIMEO ID {% endcomment %}
+  {% assign vimeoID = include.vimeoID %}
+  <iframe class="pb-desktop-only"
+          src="https://player.vimeo.com/video/{{ vimeoID }}" 
+          width="640" 
+          height="360" 
+          frameborder="0" 
+          webkitallowfullscreen 
+          mozallowfullscreen 
+          allowfullscreen></iframe>
+
+  <iframe class="pb-mobile-only"
+          src="https://player.vimeo.com/video/{{ vimeoID }}" 
+          width="320" 
+          height="169" 
+          frameborder="0" 
+          webkitallowfullscreen 
+          mozallowfullscreen 
+          allowfullscreen></iframe>
+</section>

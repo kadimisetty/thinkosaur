@@ -1,8 +1,64 @@
+# SSL compliance. 
+# READ https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains
+enforce_ssl: thinkosaur.com 
+
 meta:
-  title: thinkosaur
-  author: Sri Kadimisetty
-  description: Screencasts for Ambitious Programmers
+  twitterID: hithinkosaur
+  siteTitle: thinkosaur
+  siteDescription: Short shows for programmers
+  googleAnalyticsTrackingID: UA-73075513-1
+  siteURL: https://thinkosaur.com
 
 collections:
   pages:
     output: true
+
+  webtales:
+    slug: webtales
+    permalink: /webtales/:path
+    name: Web Tales
+    description: The browsers have stories to tell
+    hostID: sri
+    output: true
+  hashbang:
+    slug: hashbang
+    permalink: /hashbang/:path
+    name: Hash Bang
+    description: Become a command line warrior
+    hostID: sri
+    output: true
+  vimwatch:
+    slug: vimwatch
+    permalink: /vimwatch/:path
+    name: vim.watch
+    description: Master Vim, the editor extraordinaire
+    hostID: sri
+    output: true
+  # macsquared:
+  #   slug: macsquared
+  #   permalink: /macsquared/:path
+  #   name: Mac Squared
+  #   description: Get intimate with your Mac
+  #   hostID: sri
+  #   output: true
+  # ecstatic:
+  #   slug: ecstatic
+  #   permalink: /ecstatic/:path
+  #   name: ecstatic
+  #   description: Learn the delights of a static web
+  #   hostID: sri
+  #   output: true
+  # paperplanes:
+  #   slug: paperplanes
+  #   permalink: /paperplanes/:path
+  #   name: Paper Planes
+  #   description: Build great products by learning to prototype
+  #   hostID: sri
+  #   output: true
+  # gitsetgo:
+  #   slug: gitsetgo
+  #   permalink: /gitsetgo/:path
+  #   name: Git Set Go!
+  #   description: Learn the one true way to track everything
+  #   hostID: sri
+  #   output: true

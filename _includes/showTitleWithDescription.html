@@ -1,0 +1,11 @@
+<section class="showTitleWithDescription pb">
+  <a href="/{{ include.show.slug }}">
+    {% comment %}PREPARE THE SHOW'S MASTHEAD'S POSTERS{% endcomment %}
+    {% capture mastheadFilename %}{{ include.show.label }}Masthead.png{% endcapture %}
+    {% capture mastheadFilenameRetina %}{{ include.show.label }}Masthead@2x.png{% endcapture %}
+    {% capture altLabel %}{{ show.name }}{% endcapture %}
+    {% include assetImage.html filename=mastheadFilename  filenameRetina=mastheadFilenameRetina  alt=altLabel %}
+  </a>
+
+  <h2>{{ include.show.description }}</h2>
+</section>

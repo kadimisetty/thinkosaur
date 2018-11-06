@@ -1,0 +1,23 @@
+/* 
+* PENCILBOX 
+* Author: Sri Kadimisetty <sri.io>
+* Version: 0.5 Oct 2015
+* 
+* Notes:
+* 1. Element in a `pb` class occupies the entire width.
+* 2. Element in a `pb-half` class occupies half the width.
+* 3. A `pb-half` has to be placed inside a `pb`.
+* 4. A `pb` can contain two `pb-half`s.
+* 5. A `pb-half-flush` provides np padding towards the center.
+* 6. Two 'pb-half's have a gutter in the center
+* 7. There is no parent "grid container".
+*
+* TODO: 
+* 1. Extract Percentages as a Math Calculation.
+* 2. Make grid availabe as mixins to avoid html pollution.
+*/
+
+
+@import "config";
+@import "mixins";
+@import "grid";

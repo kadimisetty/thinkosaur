@@ -1,3 +1,23 @@
-#billboard { 
-    background-color: red;
+.billboard {
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+
+    text-align: center;
+
+    h2 { 
+        padding-bottom: 2rem;
+        margin-top: 0.2rem; 
+        background-image: url("/assets/img/downwardArrowhead.svg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+
+    @include desktop {
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
+    }
+
+    @include mobile {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
 }

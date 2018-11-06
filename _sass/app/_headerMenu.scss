@@ -1,0 +1,16 @@
+.headerMenu {
+    text-align: center;
+
+    @include mobile { margin-top: 1rem; }
+
+    @include desktop {
+        margin-top: 1.4rem;
+
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.testimonials {
+    @include mobile { display: none; }
+
+    @include desktop {
+        margin: 4rem auto 0 auto;
+
+        background-image: url('/assets/img/heart.png');
+        background-repeat: repeat;
+        background-position: top; 
+
+        .card {
+            margin: 4rem auto;
+            position: relative;
+            width: 420px;
+            height: 535px;
+
+            background-image: url('/assets/img/testimonialBackground.png');
+            background-repeat: no-repeat;
+            background-position: top; 
+
+            .message {
+                padding: 1.6rem 4.4rem;
+
+                font-weight: bold;
+                font-size: 2.1875rem;
+                line-height: 2.625rem;
+            }
+
+            .meta {
+                position:absolute;
+                bottom:0;
+                width: 80%;
+                padding: 0 4rem 4rem 4rem;
+
+                img {
+                    display: block;
+                    float: left;
+                    margin-right: 1rem;
+                }
+
+                .name {
+                    display: block;
+                    margin-top: 0.6rem;
+                    margin-bottom: 0.2rem;
+
+                    font-weight: normal;
+                    font-weight: bold;
+                    line-height: 0.8rem;
+                }
+
+                .title {
+                    display: block;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

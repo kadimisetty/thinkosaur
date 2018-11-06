@@ -1,18 +1,73 @@
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
 
-  <!-- Meta -->
-  <title>{{ site.meta.title }}</title>
-  <meta name="description" content="{{ site.meta.description }}">
-  <meta name="author" content="{{ site.meuta.author }}">
+    <!-- REDIRECT TO HTTP -->
+    <!-- READ https://sheharyar.me/blog/free-ssl-for-github-pages-with-custom-domains/ -->
+    <script type="text/javascript">
+      var host = "thinkosaur.com";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+    </script>
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/app.css">
-</head>
 
-<body>
-  <!-- Main Content --> 
-  {{ content }}
-</body>
+    <!-- DNS PREFETCHES -->
+    {% comment %}Array of root URLs to dns-prefetch{% endcomment %}
+    {% assign URLsToDNSPrefetch = "//player.vimeo.com|//f.vimeocdn.com|//cdnjs.cloudflare.com" | split: "|" %}
+    {% include dnsPrefetches.html URLs=URLsToDNSPrefetch %}
+
+
+    <!-- META CONTINUED-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% capture siteTitle %}{{ site.meta.siteTitle }}{% if page.showLabel %} {{ page.showLabel }}{% endif %}{% if page.title %} - {{ page.title }}{% endif %}{% endcapture %}
+    {% capture siteDescription %}{{ site.meta.siteTitle }}, {{ site.meta.siteDescription }} {{ page.showLabel }} {% if page.title %}{{ page.title }} - {{ page.content | strip_html | truncatewords: 50 }}{% endif %}{% endcapture %}
+    <title>{{ sitetitle }}</title>
+    <meta name="description" content="{{ siteDescription }}">
+
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="/css/app.css">
+
+
+    <!-- VERIFICATIONS -->
+    <!-- Google Apps -->
+    <meta name="google-site-verification" content="qlrEQOVi8CRmeita8gKrcvEZ4UkHCekkj2O0xzXpNf0" />
+
+
+    <!-- RESOURCE PREFETCHES -->
+    {% comment %}Array of resource URLs to prefetch{% endcomment %}
+    {% assign URLsToPrefetch = "/assets/img/thinkosaurShow.png|/assets/img/thinkosaurShow@2x.png|/assets/img/thinkosaurHeader.png|/assets/img/thinkosaurHeader@2x.png|/assets/img/webtalesMasthead.png|/assets/img/webtalesMasthead@2x.png" | split: "|" %}
+    {% include resourcePrefetches.html URLs=URLsToPrefetch %}
+
+
+    <!-- TWITTER CARD -->
+    {% capture twitterCardDescription %}{{ site.data.copy.homepage.tagLine.firstLine }} {{ site.data.copy.homepage.tagLine.secondLine }}{% endcapture %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.meta.twitterID }}" />
+    <meta name="twitter:title" content="{{ siteTitle }}" />
+    <meta name="twitter:description" content="{{ twitterCardDescription }}" />
+    <meta name="twitter:image" content="http://thinkosaur.com/assets/img/twitterCardImage.png" />
+  </head>
+  <body>
+
+        {{ content }}
+
+
+      <!-- SCRIPTS -->
+      <!-- jQuery Mini -->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+      <!-- RetinaJS -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/retina.js/1.3.0/retina.min.js"></script>
+
+      {% comment %}Load analytis only during production. Github Pages will set environment as production{% endcomment %}
+      {% if jekyll.environment == 'production' %}
+        <!-- Goodgle Analytics -->
+        {% include googleAnalytics.html trackingID=site.meta.googleAnalyticsTrackingID %}
+      {% endif %}
+  </body>
 </html>

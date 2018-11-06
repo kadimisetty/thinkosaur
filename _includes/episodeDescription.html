@@ -1,0 +1,19 @@
+<section class="episodeDescription pb">
+  {% comment %}PREPARE EPISODE DESCRIPTION {% endcomment %}
+  {% assign description = include.description %}
+  {% assign duration = include.duration %}
+  {% assign publishDate = include.publishDate %}
+  {% assign metaInfo = include.metaInfo %}
+  {% assign featured = include.featured %}
+
+  {{ description | markdownify }}
+
+
+  {% capture publishDateAsPlainString %}{{ publishDate }}{% endcapture %}
+  <p class="metaInfo">{{ publishDateAsPlainString | date_to_string }}</p>
+
+  {% for software in featured %}
+    <p class="metaInfo">{{ software }}</p>
+  {% endfor %}
+
+</section>

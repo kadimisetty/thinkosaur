@@ -1,0 +1,11 @@
+<section class="showsList pb pb-mobile-only">
+<ul>
+  {% for show in include.shows %}
+    <li><a href="/{{ show.slug }}"
+           data-description="{{ show.description }}">
+        {{ show.name }}</a>
+           </a>
+    </li>
+  {% endfor %}
+</ul>
+</section>

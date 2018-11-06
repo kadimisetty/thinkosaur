@@ -1,7 +1,8 @@
-<div id="billboard">
-  <h1>
-    <a href="#">
-      <img src="assets/logo__light--dark.svg" alt="12x12 Club" />
-    </a>
-  </h1>
-</div><!-- /#billboard -->
+<section class="billboard pb">
+
+  {% include assetImage.html filename="thinkosaurMasthead.png" filenameRetina="thinkosaurMasthead@2x.png" alt="thinkosaur" %}
+
+  <h2>{{ site.data.copy.homepage.tagLine.firstLine }}<br />
+    {{ site.data.copy.homepage.tagLine.secondLine }} 
+  </h2>
+</section>

@@ -1,0 +1,17 @@
+.showTitleWithDescription {
+    text-align: center;
+
+    h2 { margin-top: 0.2rem; }
+
+    @include desktop {
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+
+        @include fadeInDown($duration: 0.4s, $delay: 0s);
+    }
+
+    @include mobile {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}

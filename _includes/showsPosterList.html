@@ -1,0 +1,21 @@
+<section class="showsPosterList pb pb-desktop-only">
+  <ul>
+    {% for show in include.shows %}
+      {% comment %}PREPARE EACH SHOW'S POSTERS{% endcomment %}
+      {% capture posterName %}{{ show.slug}}Poster.png{% endcapture %}
+      {% capture posterNameRetina %}{{ show.slug}}Poster@2x.png{% endcapture %}
+      {% capture altLabel %}{{ show.name }}{% endcapture %}
+
+      <li>
+        <h2>
+            <a href="/{{ show.slug }}">
+              {% include assetImage.html filename=posterName filenameRetina=posterNameRetina alt=altLabel %}
+            </a>
+        </h2>
+
+        <h3>{{ show.description }}</h3>
+      </li>
+
+    {% endfor %}
+  </ul>
+</section>

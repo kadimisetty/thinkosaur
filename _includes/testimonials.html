@@ -1,0 +1,21 @@
+<section class="testimonials pb">
+  {% comment %}PREPARE TESTIMONIAL{% endcomment %}
+  {% assign message=include.message %}
+  {% assign name=include.name %}
+  {% assign title=include.title %}
+  {% capture photoFilename %}{{ include.photoFilenameSlug }}.png{% endcapture %}
+  {% capture retinaPhotoFilename %}{{ include.photoFilenameSlug }}@2x.png{% endcapture %}
+
+
+  <div class="card">
+    <p class="message">{{ message }}</p>
+
+    <div class="meta">
+      {% include assetImage.html filename=photoFilename retinaFilename=retinaPhotoFilename alt=name %}
+      <p class="name">{{ name }}</p>
+      <p class="title">{{ title }}</p>
+    </div>
+  </div>
+
+</section>
+
